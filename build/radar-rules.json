@@ -3135,6 +3135,19 @@
       }
     ]
   },
+  "amz123.com": {
+    "_name": "Amz123",
+    ".": [
+      {
+        "title": "AMZ123 快讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/kx"
+        ],
+        "target": "/amz123/kx"
+      }
+    ]
+  },
   "android.com": {
     "_name": "Android",
     "developer": [
@@ -3941,6 +3954,7 @@
         "title": "热搜",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
+          "/",
           "/"
         ],
         "target": "/bilibili/hot-search"
@@ -8333,6 +8347,19 @@
       }
     ]
   },
+  "dingshao.cn": {
+    "_name": "盯梢",
+    "www": [
+      {
+        "title": "频道",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/share/:shortId"
+        ],
+        "target": "/dingshao/share/:shortId"
+      }
+    ]
+  },
   "discord.com": {
     "_name": "Discord",
     ".": [
@@ -9399,11 +9426,11 @@
       }
     ]
   },
-  "fastbull.cn": {
-    "_name": "法布财经",
+  "fastbull.com": {
+    "_name": "FastBull",
     ".": [
       {
-        "title": "快讯",
+        "title": "News Flash",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
           "/express-news",
@@ -9412,22 +9439,13 @@
         "target": "/fastbull/express-news"
       },
       {
-        "title": "新闻",
+        "title": "News",
         "docs": "https://docs.rsshub.app/routes/finance",
         "source": [
-          "/news",
-          "/"
+          "/cn/news",
+          "/cn"
         ],
         "target": "/fastbull/news"
-      },
-      {
-        "title": "新闻",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/news",
-          "/"
-        ],
-        "target": "/fastbull/"
       }
     ]
   },
@@ -15448,6 +15466,67 @@
       }
     ]
   },
+  "ifun.cool": {
+    "_name": "趣集",
+    "n": [
+      {
+        "title": "盐选故事分类",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ifun/n/category/:id?"
+      },
+      {
+        "title": "全部",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ifun/n/category"
+      },
+      {
+        "title": "通告",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ifun/n/category/1"
+      },
+      {
+        "title": "盐选故事",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ifun/n/category/2"
+      },
+      {
+        "title": "趣集精选",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ifun/n/category/3"
+      },
+      {
+        "title": "盐选故事搜索",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/search-result"
+        ],
+        "target": "/ifun(_,url)=>{const urlObj=new URL(url);const keywords=urlObj.searchParams.get(\"s\");return`/ifun/n/search/${keywords}`}"
+      },
+      {
+        "title": "盐选故事专栏",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/article-list/1"
+        ],
+        "target": "/ifun(_,url)=>{const urlObj=new URL(url);const name=urlObj.searchParams.get(\"tagName\");return`/ifun/n/tag/${name}`}"
+      }
+    ]
+  },
   "iiilab.com": {
     "_name": "人人都是自媒体",
     "www": [
@@ -16426,6 +16505,99 @@
           "/news/articleList.html"
         ],
         "target": "/joins/chinese/S1N12"
+      }
+    ]
+  },
+  "joneslanglasalle.com.cn": {
+    "_name": "Jones Lang LaSalle",
+    ".": [
+      {
+        "title": "Trends & Insights",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:language/:category"
+        ],
+        "target": "/joneslanglasalleparams=>{const language=params.language;const category=params.category;return language?`/${language}${category?`/${category}`:\"\"}`:\"\"}"
+      },
+      {
+        "title": "Latest",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/en/trends-and-insights"
+        ],
+        "target": "/joneslanglasalle/en/trends-and-insights"
+      },
+      {
+        "title": "Workplace",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/en/trends-and-insights/workplace"
+        ],
+        "target": "/joneslanglasalle/en/trends-and-insights/workplace"
+      },
+      {
+        "title": "Investor",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/en/trends-and-insights/investor"
+        ],
+        "target": "/joneslanglasalle/en/trends-and-insights/investor"
+      },
+      {
+        "title": "Cities",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/en/trends-and-insights/cities"
+        ],
+        "target": "/joneslanglasalle/en/trends-and-insights/cities"
+      },
+      {
+        "title": "Research",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/en/trends-and-insights/research"
+        ],
+        "target": "/joneslanglasalle/en/trends-and-insights/research"
+      },
+      {
+        "title": "房地产趋势与洞察",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/zh/trends-and-insights"
+        ],
+        "target": "/joneslanglasalle/zh/trends-and-insights"
+      },
+      {
+        "title": "办公空间",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/zh/trends-and-insights/workplace"
+        ],
+        "target": "/joneslanglasalle/zh/trends-and-insights/workplace"
+      },
+      {
+        "title": "投资者",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/zh/trends-and-insights/investor"
+        ],
+        "target": "/joneslanglasalle/zh/trends-and-insights/investor"
+      },
+      {
+        "title": "城市",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/zh/trends-and-insights/cities"
+        ],
+        "target": "/joneslanglasalle/zh/trends-and-insights/cities"
+      },
+      {
+        "title": "研究报告",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/zh/trends-and-insights/research"
+        ],
+        "target": "/joneslanglasalle/zh/trends-and-insights/research"
       }
     ]
   },
@@ -17518,6 +17690,43 @@
           "/"
         ],
         "target": "/luogu/daily"
+      },
+      {
+        "title": "用户文章",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/user/:uid"
+        ],
+        "target": "/luogu/user/article/:uid"
+      },
+      {
+        "title": "用户博客",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog/:name"
+        ],
+        "target": "/luogu/user/blog/:name"
+      },
+      {
+        "title": "用户动态",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/user/:uid"
+        ],
+        "target": "/luogu/user/feed/:uid"
+      }
+    ]
+  },
+  "luogu.com": {
+    "_name": "洛谷",
+    ".": [
+      {
+        "title": "用户文章",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/user/:uid"
+        ],
+        "target": "/luogu/user/article/:uid"
       },
       {
         "title": "用户博客",
@@ -26326,7 +26535,7 @@
         "target": "/spotify/saved"
       },
       {
-        "title": "Show",
+        "title": "Show/Podcasts",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
           "/show/:id"
@@ -28093,6 +28302,19 @@
           "/www/lawrules/rule/repeal/rules/index.html"
         ],
         "target": "/szse/rule/repeal/rules"
+      }
+    ]
+  },
+  "taiwanmobile.com": {
+    "_name": "台灣大哥大",
+    ".": [
+      {
+        "title": "資費公告",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/cs/public/servAnn/queryList.htm"
+        ],
+        "target": "/taiwanmobile/rate-plans"
       }
     ]
   },
