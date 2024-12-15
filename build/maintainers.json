@@ -392,6 +392,9 @@
   "/ajmide/:id": [
     "Fatpandac"
   ],
+  "/ali213/news/:category?": [
+    "nczitzk"
+  ],
   "/alicesoft/information/:category?/:game?": [
     "keocheung"
   ],
@@ -604,6 +607,9 @@
   "/baidu/tieba/user/:uid": [
     "igxlin",
     "nczitzk"
+  ],
+  "/baijing/article": [
+    "p3psi-boo"
   ],
   "/bandcamp/live": [
     "nczitzk"
@@ -1288,6 +1294,9 @@
   "/china/news/military": [
     "jiaaoMario"
   ],
+  "/chinacdc/:category{.+}?": [
+    "nczitzk"
+  ],
   "/chinadegrees/:province?": [
     "TonyRL"
   ],
@@ -1315,6 +1324,9 @@
   "/chinawriter/:id{.+}?": [],
   "/chlinlearn/daily-blog": [
     "huyyi"
+  ],
+  "/chongdiantou/": [
+    "Geraldxm"
   ],
   "/chsi/hotnews": [
     "yanbot-team"
@@ -1647,6 +1659,9 @@
   ],
   "/dangdang/notice/:type?": [
     "353325487"
+  ],
+  "/daoxuan/": [
+    "dx2331lxz"
   ],
   "/dapenti/subject/:id": [
     "xyqfer"
@@ -2596,7 +2611,7 @@
   "/github/pulse/:user/:repo/:period?": [
     "jameschensmith"
   ],
-  "/github/repos/:user": [
+  "/github/repos/:user/:type?/:sort?": [
     "DIYgod"
   ],
   "/github/search/:query/:sort?/:order?": [
@@ -3343,6 +3358,9 @@
   "/hrbust/jwzx/:type?/:page?": [
     "LenaNouzen"
   ],
+  "/hrbust/news/:category?": [
+    "cscnk52"
+  ],
   "/huanqiu/news/:category?": [
     "yuxinliu-alex"
   ],
@@ -3513,6 +3531,9 @@
   ],
   "/iguoguo/html5": [
     "yuxinliu-alex"
+  ],
+  "/iheima/recommend": [
+    "p3psi-boo"
   ],
   "/iiilab/": [
     "Joey"
@@ -4000,6 +4021,9 @@
   ],
   "/kuaidi100/company": [
     "NeverBehave"
+  ],
+  "/kuaishou/profile/:principalId": [
+    "GuoChen-thlg"
   ],
   "/kunchengblog/essay": [
     "nczitzk"
@@ -5184,7 +5208,8 @@
     "nczitzk"
   ],
   "/papers/:category{.+}?": [
-    "nczitzk"
+    "nczitzk",
+    "Muyun99"
   ],
   "/paradigm/writing": [
     "Fatpandac"
@@ -5458,7 +5483,7 @@
     "mintyfrankie"
   ],
   "/qbitai/category/:category": [
-    "FuryMartin"
+    "FuryMartin, Geraldxm"
   ],
   "/qbitai/tag/:tag": [
     "FuryMartin"
@@ -6891,7 +6916,8 @@
   "/twitter/keyword/:keyword/:routeParams?": [
     "DIYgod",
     "yindaheng98",
-    "Rongronggg9"
+    "Rongronggg9",
+    "pseudoyu"
   ],
   "/twitter/likes/:id/:routeParams?": [
     "xyqfer"
