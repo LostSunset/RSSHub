@@ -7737,7 +7737,7 @@
         "source": [
           "/"
         ],
-        "target": "/copernicium/:category"
+        "target": "/copernicium/:category?"
       }
     ]
   },
@@ -9366,6 +9366,19 @@
       }
     ]
   },
+  "ygdy8.net": {
+    "_name": "电影天堂",
+    ".": [
+      {
+        "title": "最新电影",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/index.html"
+        ],
+        "target": "/dytt/"
+      }
+    ]
+  },
   "eagle.cool": {
     "_name": "Eagle",
     "cn": [
@@ -10752,6 +10765,31 @@
           "/"
         ],
         "target": "/gcores/tag/:tag"
+      }
+    ]
+  },
+  "gdufs.edu.cn": {
+    "_name": "广东外语外贸大学",
+    "www": [
+      {
+        "title": "新闻",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/gwxw/gwxw1.htm",
+          "/"
+        ],
+        "target": "/gdufs/news"
+      }
+    ],
+    "xwxy": [
+      {
+        "title": "新闻学院-学院新闻",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/xwzx/xyxw",
+          "/"
+        ],
+        "target": "/gdufs/xwxy-news"
       }
     ]
   },
@@ -14204,6 +14242,19 @@
       }
     ]
   },
+  "hiring.cafe": {
+    "_name": "HiringCafe",
+    ".": [
+      {
+        "title": "Jobs",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/"
+        ],
+        "target": "/hiring.cafe/jobs/:keywords"
+      }
+    ]
+  },
   "hit.edu.cn": {
     "_name": "哈尔滨工业大学",
     "hitgs": [
@@ -16843,6 +16894,27 @@
           "/u/:uid"
         ],
         "target": "/jike/user/:uid"
+      }
+    ]
+  },
+  "jimmyspa.com": {
+    "_name": "幾米 JIMMY S.P.A. Official Website",
+    "www": [
+      {
+        "title": "Books",
+        "docs": "https://docs.rsshub.app/routes/design",
+        "source": [
+          "/:language/Books"
+        ],
+        "target": "/jimmyspa/books/:language"
+      },
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/design",
+        "source": [
+          "/:language/News"
+        ],
+        "target": "/jimmyspa/news/:language"
       }
     ]
   },
@@ -27070,6 +27142,19 @@
       }
     ]
   },
+  "spglobal.com": {
+    "_name": "S&P Global",
+    "www": [
+      {
+        "title": "Ratings",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/ratings/:language"
+        ],
+        "target": "/spglobal/ratings/:language?"
+      }
+    ]
+  },
   "spotify.com": {
     "_name": "Spotify",
     "open": [
@@ -31103,6 +31188,16 @@
           "/index.htm"
         ],
         "target": "/whu/rsgis/index"
+      }
+    ],
+    "swrh": [
+      {
+        "title": "水利水电学院公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:type"
+        ],
+        "target": "/whu/swrh/:type"
       }
     ],
     "gs": [
