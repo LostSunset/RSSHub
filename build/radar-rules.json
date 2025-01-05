@@ -4530,6 +4530,16 @@
         "target": "/bnu/dwxgb/:category/:type"
       }
     ],
+    "fe": [
+      {
+        "title": "教育学部-培养动态",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/pc/cms1info/list/1/:category"
+        ],
+        "target": "/bnu/fe/:category"
+      }
+    ],
     "jwb": [
       {
         "title": "教务部（研究生院）",
@@ -5128,6 +5138,19 @@
           "/:column/:subColumn/index.html"
         ],
         "target": "/cast/:column/:subColumn/:category?"
+      }
+    ]
+  },
+  "catticenter.com": {
+    "_name": "全国翻译专业资格水平考试 (CATTI)",
+    "www": [
+      {
+        "title": "CATTI 考试消息",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/:category"
+        ],
+        "target": "/catti/news/:category"
       }
     ]
   },
@@ -9053,7 +9076,7 @@
     "_name": "DL NEWS",
     ".": [
       {
-        "title": "Unknown",
+        "title": "Latest News",
         "docs": "https://docs.rsshub.app/routes/other",
         "source": [
           "/articles/:category"
@@ -10177,7 +10200,7 @@
         "source": [
           "/:category"
         ],
-        "target": "/finology/:category"
+        "target": "/finology/category/:category"
       },
       {
         "title": "Most Viewed",
@@ -10185,7 +10208,7 @@
         "source": [
           "/most-viewed"
         ],
-        "target": "/finology/most-viewed/monthly"
+        "target": "/finology/most-viewed"
       },
       {
         "title": "Trending Topic",
@@ -16200,6 +16223,19 @@
       }
     ]
   },
+  "ifanr.comdigest": {
+    "_name": "爱范儿",
+    "www": [
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/"
+        ],
+        "target": "/ifanr/digest"
+      }
+    ]
+  },
   "ifun.cool": {
     "_name": "趣集",
     "n": [
@@ -17754,6 +17790,19 @@
           "/blog/*"
         ],
         "target": "/konghq/blog-posts"
+      }
+    ]
+  },
+  "koreaherald.com": {
+    "_name": "The Korea Herald",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/koreaherald/:category"
       }
     ]
   },
@@ -23647,6 +23696,16 @@
   },
   "oschina.net": {
     "_name": "开源中国",
+    "www": [
+      {
+        "title": "专栏",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/oschina(_,url)=>{const urlObj=new URL(url);const id=urlObj.searchParams.get(\"id\")??void 0;return`/oschina/column/${id}`}"
+      }
+    ],
     ".": [
       {
         "title": "资讯",
@@ -23820,6 +23879,19 @@
           "/:section/"
         ],
         "target": "/p-articles/section/:section"
+      }
+    ]
+  },
+  "pacilution.com": {
+    "_name": "普世社会科学研究所",
+    "www": [
+      {
+        "title": "最新文章",
+        "docs": "https://docs.rsshub.app/routes/journal",
+        "source": [
+          "/"
+        ],
+        "target": "/pacilution/latest"
       }
     ]
   },
@@ -25439,6 +25511,20 @@
           "/"
         ],
         "target": "/ruancan/user/:id"
+      }
+    ]
+  },
+  "ruankao.org.cn": {
+    "_name": "中国计算机职业技术资格考试",
+    "www": [
+      {
+        "title": "软考新闻动态",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/index/work",
+          "/"
+        ],
+        "target": "/ruankao/news"
       }
     ]
   },
@@ -30932,6 +31018,27 @@
       }
     ]
   },
+  "visionias.in": {
+    "_name": "VisionIAS",
+    ".": [
+      {
+        "title": "News Today",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/current-affairs/news-today"
+        ],
+        "target": "/visionias/newsToday"
+      },
+      {
+        "title": "Weekly Focus",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/current-affairs/weekly-focus"
+        ],
+        "target": "/visionias/weeklyFocus"
+      }
+    ]
+  },
   "vocus.cc": {
     "_name": "方格子",
     ".": [
@@ -32289,7 +32396,7 @@
         "target": "/youtube/subscriptions"
       },
       {
-        "title": "Channel with username",
+        "title": "Channel with user handle",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/user/:username",
