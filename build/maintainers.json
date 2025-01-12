@@ -135,8 +135,17 @@
   "/2023game/:category?/:tab?": [
     "xzzpig"
   ],
+  "/21caijing/channel/:name{.+}?": [
+    "nczitzk"
+  ],
   "/2cycd/:fid/:sort?": [
     "shelken"
+  ],
+  "/30secondsofcode/category/:category?/:subCategory?": [
+    "Rjnishant530"
+  ],
+  "/30secondsofcode/latest": [
+    "Rjnishant530"
   ],
   "/36kr/hot-list/:category?": [
     "nczitzk"
@@ -931,6 +940,9 @@
   "/bjx/gf/:type": [
     "Sxuet"
   ],
+  "/blizzard/news-cn/:category?": [
+    "zhangpeng2k"
+  ],
   "/blizzard/news/:language?/:category?": [
     "nczitzk"
   ],
@@ -1331,6 +1343,9 @@
   "/chinania/:category{.+}?": [
     "nczitzk"
   ],
+  "/chinaratings/CreditResearch/:category{.+}?": [
+    "nczitzk"
+  ],
   "/chinathinktanks/:id": [
     "Aeliu"
   ],
@@ -1603,6 +1618,9 @@
   "/csu/mail/:type?": [
     "j1g5awi"
   ],
+  "/ctbu/xxgg": [
+    "Skylwn"
+  ],
   "/cts/:category": [
     "miles170"
   ],
@@ -1657,19 +1675,22 @@
   "/dahecube/:type?": [
     "linbuxiao"
   ],
-  "/daily/discussed": [
+  "/daily/discussed/:period?/:innerSharedContent?/:dateSort?": [
     "Rjnishant530"
   ],
-  "/daily/": [
+  "/daily/popular/:innerSharedContent?/:dateSort?": [
     "Rjnishant530"
   ],
-  "/daily/source/:sourceId": [
+  "/daily/source/:sourceId/:innerSharedContent?": [
     "TonyRL"
   ],
-  "/daily/upvoted": [
+  "/daily/squads/:squads/:innerSharedContent?": [
     "Rjnishant530"
   ],
-  "/daily/user/:userId": [
+  "/daily/upvoted/:period?/:innerSharedContent?/:dateSort?": [
+    "Rjnishant530"
+  ],
+  "/daily/user/:userId/:innerSharedContent?": [
     "TonyRL"
   ],
   "/damai/activity/:city/:category/:subcategory/:keyword?": [
@@ -2569,6 +2590,9 @@
   "/gelonghui/user/:id": [
     "nczitzk"
   ],
+  "/genossenschaften*": [
+    "sk22"
+  ],
   "/geocaching/blogs": [
     "HankChow"
   ],
@@ -3195,6 +3219,9 @@
     "nczitzk",
     "pseudoyu"
   ],
+  "/hdu/auto/:type?": [
+    "jalenzz"
+  ],
   "/hdu/cs": [
     "legr4ndk"
   ],
@@ -3608,6 +3635,9 @@
   ],
   "/ikea/gb/offer": [
     "HenryQW"
+  ],
+  "/iknowwhatyoudownload/stats/daily/:country": [
+    "p3psi-boo"
   ],
   "/imagemagick/changelog": [
     "nczitzk"
@@ -4419,6 +4449,9 @@
   ],
   "/medieval-china/": [
     "artefaritaKuniklo"
+  ],
+  "/medium/feed/:user": [
+    "pseudoyu"
   ],
   "/medium/following/:user": [
     "ImSingee"
@@ -5921,6 +5954,9 @@
     "y9c",
     "TonyRL"
   ],
+  "/sciencedirect/call-for-paper/:subject": [
+    "etShaw-zh"
+  ],
   "/sciencedirect/journal/:id": [
     "nczitzk"
   ],
@@ -6495,6 +6531,10 @@
   ],
   "/steam/appcommunityfeed/:appid/:routeParams?": [
     "NyaaaDoge"
+  ],
+  "/steam/curator/:id/:routeParams?": [
+    "naremloa",
+    "fenxer"
   ],
   "/steam/search/:params": [
     "moppman"
@@ -7183,6 +7223,9 @@
   ],
   "/upc/yjs": [
     "shengmaosu"
+  ],
+  "/ups/track/:trackingNumber": [
+    "Aquabet"
   ],
   "/uptimerobot/rss/:id/:routeParams?": [
     "Rongronggg9"
@@ -7983,6 +8026,9 @@
   ],
   "/zhihu/people/activities/:id": [
     "DIYgod"
+  ],
+  "/zhihu/people/allCollections/:id": [
+    "Healthyyue"
   ],
   "/zhihu/people/answers/:id": [
     "DIYgod",
