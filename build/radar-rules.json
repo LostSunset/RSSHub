@@ -9298,6 +9298,29 @@
       }
     ]
   },
+  "cpta.com.cn": {
+    "_name": "中国人事考试网",
+    "www": [
+      {
+        "title": "中国人事考试网通知公告",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/notice.html",
+          "/"
+        ],
+        "target": "/cpta/notice"
+      },
+      {
+        "title": "中国人事考试网成绩发布",
+        "docs": "https://docs.rsshub.app/routes/study",
+        "source": [
+          "/performance.html",
+          "/"
+        ],
+        "target": "/cpta/performance"
+      }
+    ]
+  },
   "cpuid.com": {
     "_name": "CPUID",
     ".": [
@@ -12068,6 +12091,20 @@
           "/"
         ],
         "target": "/gameapps/"
+      }
+    ]
+  },
+  "gamebase.com.tw": {
+    "_name": "遊戲基地 Gamebase",
+    "news": [
+      {
+        "title": "新聞",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news",
+          "/news/:type"
+        ],
+        "target": "/gamebase(params,url)=>{const type=params.type;const urlObj=new URL(url);const category=urlObj.searchParams.get(\"type\")??void 0;return`/gamebase/news${type?`/${type}${category?`/${category}`:\"\"}`:\"\"}`}"
       }
     ]
   },
@@ -16176,7 +16213,15 @@
         "source": [
           "/:category.htm"
         ],
-        "target": "/hrbust/news/:category?"
+        "target": "/hrbust/news/:category"
+      },
+      {
+        "title": "新闻网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/hrbust/news/"
       }
     ]
   },
@@ -18874,12 +18919,29 @@
         "target": "/juejin/books"
       },
       {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:category"
+        ],
+        "target": "/juejin/category/:category"
+      },
+      {
         "title": "单个收藏夹",
         "docs": "https://docs.rsshub.app/routes/programming",
         "source": [
           "/collection/:collectionId"
         ],
         "target": "/juejin/collection/:collectionId"
+      },
+      {
+        "title": "收藏集",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/user/:id",
+          "/user/:id/collections"
+        ],
+        "target": "/juejin/collections/:id"
       },
       {
         "title": "专栏",
@@ -18896,15 +18958,6 @@
           "/user/:id"
         ],
         "target": "/juejin/dynamic/:id"
-      },
-      {
-        "title": "收藏集",
-        "docs": "https://docs.rsshub.app/routes/programming",
-        "source": [
-          "/user/:id",
-          "/user/:id/collections"
-        ],
-        "target": "/juejin/collections/:id"
       },
       {
         "title": "用户文章",
@@ -19467,6 +19520,67 @@
           "/fine/:tagId"
         ],
         "target": "/lfsyd/tag/:tagId"
+      }
+    ]
+  },
+  "lhratings.com": {
+    "_name": "联合资信评估股份有限公司",
+    "www": [
+      {
+        "title": "研究报告",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html"
+        ],
+        "target": "/lhratings(_,url)=>{const urlObj=new URL(url);const type=urlObj.searchParams.get(\"type\")??void 0;return`/lhratings/research/${type?`/${type}`:\"\"}`}"
+      },
+      {
+        "title": "宏观经济",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=1"
+        ],
+        "target": "/lhratings/research/1"
+      },
+      {
+        "title": "债券市场",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=2"
+        ],
+        "target": "/lhratings/research/2"
+      },
+      {
+        "title": "行业研究",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=3"
+        ],
+        "target": "/lhratings/research/3"
+      },
+      {
+        "title": "评级理论与方法",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=4"
+        ],
+        "target": "/lhratings/research/4"
+      },
+      {
+        "title": "国际债券市场与评级",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=5"
+        ],
+        "target": "/lhratings/research/5"
+      },
+      {
+        "title": "评级表现",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/research.html?type=6"
+        ],
+        "target": "/lhratings/research/6"
       }
     ]
   },
@@ -22873,8 +22987,23 @@
       }
     ]
   },
-  "missav.com": {
-    "_name": "MissAV.com",
+  "missav.ws": {
+    "_name": "MissAV",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/routes/multimedia",
+        "source": [
+          "/dm397/new",
+          "/new",
+          "/"
+        ],
+        "target": "/missav/new"
+      }
+    ]
+  },
+  "missav.ai": {
+    "_name": "MissAV",
     ".": [
       {
         "title": "最近更新",
@@ -25095,6 +25224,19 @@
       }
     ]
   },
+  "ppy.sh": {
+    "_name": "osu!",
+    "osu": [
+      {
+        "title": "Latest Ranked Beatmap",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/beatmapsets"
+        ],
+        "target": "/osu/latest-ranked/:routeParams?"
+      }
+    ]
+  },
   "otobanana.com": {
     "_name": "OTOBANANA",
     ".": [
@@ -26467,6 +26609,48 @@
         "target": "/qq/fact"
       }
     ],
+    "lol": [
+      {
+        "title": "综合",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/23"
+      },
+      {
+        "title": "公告",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/24"
+      },
+      {
+        "title": "赛事",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/25"
+      },
+      {
+        "title": "攻略",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/27"
+      },
+      {
+        "title": "社区",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/news/index.shtml"
+        ],
+        "target": "/qq/lol/news/28"
+      }
+    ],
     "pd": [
       {
         "title": "腾讯频道",
@@ -27053,6 +27237,36 @@
           "/"
         ],
         "target": "/sciencenet/user/:id"
+      }
+    ]
+  },
+  "scientificamerican.com": {
+    "_name": "Scientific American",
+    "www": [
+      {
+        "title": "Podcasts",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/podcasts/",
+          "/podcast/:id"
+        ],
+        "target": "/scientificamericanparams=>{const id=params.id;return`/scientificamerican/podcast${id?`/${id}`:\"\"}`}"
+      },
+      {
+        "title": "Science Quickly",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/podcast/science-quickly/"
+        ],
+        "target": "/scientificamerican/podcast/science-quickly"
+      },
+      {
+        "title": "Uncertain",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/podcast/science-talk/"
+        ],
+        "target": "/scientificamerican/podcast/science-talk"
       }
     ]
   },
@@ -30678,7 +30892,7 @@
       }
     ]
   },
-  "taoguba.com.cn": {
+  "tgb.cn": {
     "_name": "淘股吧",
     ".": [
       {
@@ -30689,15 +30903,6 @@
           "/"
         ],
         "target": "/taoguba/blog/:id"
-      },
-      {
-        "title": "用户博客",
-        "docs": "https://docs.rsshub.app/routes/finance",
-        "source": [
-          "/blog/:id",
-          "/"
-        ],
-        "target": "/taoguba/user/:id"
       }
     ]
   },
@@ -31565,6 +31770,14 @@
   "tsinghua.edu.cn": {
     "_name": "清华大学",
     "lib": [
+      {
+        "title": "图书馆通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/tzgg/:category"
+        ],
+        "target": "/tsinghua/lib/tzgg/:category"
+      },
       {
         "title": "图书馆资源动态",
         "docs": "https://docs.rsshub.app/routes/university",
@@ -32611,20 +32824,6 @@
       }
     ]
   },
-  "watasuke.net": {
-    "_name": "Watasuke",
-    ".": [
-      {
-        "title": "Blog",
-        "docs": "https://docs.rsshub.app/routes/blog",
-        "source": [
-          "/blog/",
-          "/"
-        ],
-        "target": "/watasuke/blog"
-      }
-    ]
-  },
   "wchscu.cn": {
     "_name": "华西医院",
     "www": [
@@ -33326,6 +33525,19 @@
           "/:id"
         ],
         "target": "/xmnn/epaper/:id"
+      }
+    ]
+  },
+  "xmu.edu.cn": {
+    "_name": "Xiamen University",
+    "soe": [
+      {
+        "title": "科研动态",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/kxyj/kydt.htm"
+        ],
+        "target": "/xmu/kydt"
       }
     ]
   },

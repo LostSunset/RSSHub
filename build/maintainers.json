@@ -1567,6 +1567,9 @@
   "/cpcey/:type?": [
     "Fatpandac"
   ],
+  "/cpta/:category": [
+    "PrinOrange"
+  ],
   "/cpuid/news": [],
   "/cqgas/tqtz": [
     "Mai19930513"
@@ -2755,7 +2758,8 @@
     "pseudoyu"
   ],
   "/google/research": [
-    "Levix"
+    "Levix",
+    "cscnk52"
   ],
   "/google/scholar/:query": [
     "HenryQW"
@@ -3426,7 +3430,8 @@
     "Derekmini"
   ],
   "/hrbust/jwzx/:type?/:page?": [
-    "LenaNouzen"
+    "LenaNouzen",
+    "cscnk52"
   ],
   "/hrbust/news/:category?": [
     "cscnk52"
@@ -4026,16 +4031,16 @@
     "DIYgod"
   ],
   "/juejin/collection/:collectionId": [
-    "isQ"
+    "yang131323"
+  ],
+  "/juejin/collections/:userId": [
+    "yang131323"
   ],
   "/juejin/column/:id": [
     "xiangzy1"
   ],
   "/juejin/dynamic/:id": [
     "CaoMeiYouRen"
-  ],
-  "/juejin/collections/:userId": [
-    "isQ"
   ],
   "/juejin/pins/:type?": [
     "xyqfer",
@@ -4210,6 +4215,9 @@
   ],
   "/lfsyd/user/:id?": [
     "auto-bot-ty"
+  ],
+  "/lhratings/research/:type?": [
+    "nczitzk"
   ],
   "/lianxh/:category?": [
     "nczitzk"
@@ -5273,6 +5281,9 @@
   "/oshwhub/:sortType?": [
     "tylinux"
   ],
+  "/osu/latest-ranked/:routeParams?": [
+    "nfnfgo"
+  ],
   "/osu/packs/:type?": [
     "JimenezLi"
   ],
@@ -5378,6 +5389,9 @@
   ],
   "/pconline/focus/:category?": [
     "CH563"
+  ],
+  "/pencilnews/": [
+    "defp"
   ],
   "/penguin-random-house/articles": [
     "StevenRCE0"
@@ -5719,6 +5733,9 @@
   "/qq/kg/:userId": [
     "zhangxiang012"
   ],
+  "/qq/lol/news/:category?": [
+    "nczitzk"
+  ],
   "/qq/pd/guild/:id/:sub?/:sort?": [
     "mobyw"
   ],
@@ -5964,6 +5981,9 @@
     "nczitzk"
   ],
   "/sciencenet/user/:id": [
+    "nczitzk"
+  ],
+  "/scientificamerican/podcast/:id?": [
     "nczitzk"
   ],
   "/scmp/coronavirus": [
@@ -6709,12 +6729,6 @@
   "/taoguba/blog/:id": [
     "nczitzk"
   ],
-  "/taoguba/user/:id": [
-    "nczitzk"
-  ],
-  "/taoguba/index": [
-    "nczitzk"
-  ],
   "/taoguba/:category?": [
     "nczitzk"
   ],
@@ -7043,6 +7057,9 @@
   ],
   "/tsdm39/bd/:type?": [
     "equt"
+  ],
+  "/tsinghua/lib/tzgg/:category": [
+    "linsenwang"
   ],
   "/tsinghua/lib/zydt/:category?": [
     "nczitzk"
@@ -7407,9 +7424,6 @@
   "/washingtonpost/app/:category{.+}?": [
     "quiniapiezoelectricity"
   ],
-  "/watasuke/blog": [
-    "honahuku"
-  ],
   "/wchscu/recruit": [
     "ViggoC"
   ],
@@ -7757,6 +7771,9 @@
     "nczitzk"
   ],
   "/xmnn/news/:category{.+}?": [],
+  "/xmu/kydt": [
+    "linsenwang"
+  ],
   "/xmut/jwc/bkjw/:category?": [],
   "/xmut/jwc/yjjw/:category?": [],
   "/xsijishe/forum/:fid": [
