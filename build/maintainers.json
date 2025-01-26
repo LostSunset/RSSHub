@@ -827,7 +827,8 @@
     "weirongxu"
   ],
   "/bilibili/user/collection/:uid/:sid/:embed?/:sortReverse?/:page?": [
-    "shininome"
+    "shininome",
+    "cscnk52"
   ],
   "/bilibili/user/fav/:uid/:embed?": [
     "DIYgod"
@@ -1185,6 +1186,9 @@
   "/cccfna/:category/:type?": [
     "hualiong"
   ],
+  "/cccmc/:category{.+}?": [
+    "nczitzk"
+  ],
   "/ccf/news/:category?": [
     "nczitzk"
   ],
@@ -1243,6 +1247,9 @@
   ],
   "/cdzjryb/zw/projectList": [
     "TonyRL"
+  ],
+  "/ce/district/:category?": [
+    "cscnk52"
   ],
   "/cebbank/quotation/all": [
     "linbuxiao"
@@ -2137,6 +2144,9 @@
   "/easynomad/": [
     "jiangsong216"
   ],
+  "/ebc/realtime/:category?": [
+    "quiniapiezoelectricity"
+  ],
   "/ecnu/acm/contest/:category?": [
     "a180285"
   ],
@@ -2596,8 +2606,9 @@
   "/genossenschaften*": [
     "sk22"
   ],
-  "/geocaching/blogs": [
-    "HankChow"
+  "/geocaching/blogs/:language?": [
+    "HankChow",
+    "Konano"
   ],
   "/getdr/": [
     "nczitzk"
@@ -3436,6 +3447,9 @@
   "/hrbust/news/:category?": [
     "cscnk52"
   ],
+  "/hrbust/nic/:category?": [
+    "cscnk52"
+  ],
   "/huanqiu/news/:category?": [
     "yuxinliu-alex"
   ],
@@ -4158,6 +4172,9 @@
   "/lala/": [
     "cnkmmk"
   ],
+  "/landiannews/": [
+    "nczitzk"
+  ],
   "/lang/live/room/:id": [
     "MittWillson"
   ],
@@ -4763,7 +4780,7 @@
   "/neea/local/:type": [
     "SunShinenny"
   ],
-  "/neea/global/jlpt": [
+  "/neea/jlpt": [
     "nczitzk"
   ],
   "/nenu/sohac/*": [],
@@ -4835,7 +4852,8 @@
   ],
   "/nhk/news/:lang?": [
     "TonyRL",
-    "pseudoyu"
+    "pseudoyu",
+    "cscnk52"
   ],
   "/niaogebiji/cat/:cat": [
     "cKotoriKat"
@@ -5267,6 +5285,9 @@
     "xueli_sherryli"
   ],
   "/oschina/column/:id": [
+    "nczitzk"
+  ],
+  "/oschina/event/:category?": [
     "nczitzk"
   ],
   "/oschina/news/:category?": [
@@ -5752,7 +5773,8 @@
     "nczitzk"
   ],
   "/qstheory/magazine/:magazine": [
-    "TonyRL"
+    "TonyRL",
+    "cscnk52"
   ],
   "/questmobile/report/:industry?/:label?": [
     "nczitzk"
@@ -6999,6 +7021,9 @@
   "/tkww/:column{.+}?": [
     "quiniapiezoelectricity"
   ],
+  "/tmtpost/nictation": [
+    "defp"
+  ],
   "/tokeninsight/blog/:lang?": [
     "fuergaosi233"
   ],
@@ -7007,8 +7032,12 @@
   "/tongji/bks": [
     "shiquda"
   ],
+  "/tongji/gs": [
+    "sitdownkevin"
+  ],
   "/tongji/yjs": [
-    "shengmaosu"
+    "shengmaosu",
+    "sitdownkevin"
   ],
   "/tongji/sem/:type?": [
     "sitdownkevin"
@@ -7128,6 +7157,9 @@
   ],
   "/twreporter/newest": [
     "emdoe"
+  ],
+  "/txks/news": [
+    "PrinOrange"
   ],
   "/txrjy/fornumtopic/:channel?": [
     "Fatpandac"
@@ -7535,11 +7567,9 @@
   "/wfu/news/:type?": [
     "cccht"
   ],
-  "/whitehouse/briefing-room/:category?": [
-    "nczitzk"
-  ],
-  "/whitehouse/ostp": [
-    "LyleLee"
+  "/whitehouse/news/:category?": [
+    "nczitzk",
+    "hkamran80"
   ],
   "/who/news-room/:category?/:language?": [
     "LogicJake",
