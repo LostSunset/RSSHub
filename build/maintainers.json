@@ -1032,6 +1032,9 @@
   "/bse/:category?/:keyword?": [
     "nczitzk"
   ],
+  "/bsky/profile/:handle/feed/:space/:routeParams?": [
+    "FerrisChi"
+  ],
   "/bsky/keyword/:keyword": [
     "untitaker"
   ],
@@ -2609,12 +2612,14 @@
   "/gcores/articles": [
     "nczitzk"
   ],
-  "/gcores/category/:category": [
+  "/gcores/categories/:id/:tab?": [
     "MoguCloud",
-    "StevenRCE0"
+    "StevenRCE0",
+    "nczitzk"
   ],
-  "/gcores/collections/:collection": [
-    "kudryavka1013"
+  "/gcores/collections/:id/:tab?": [
+    "kudryavka1013",
+    "nczitzk"
   ],
   "/gcores/news": [
     "nczitzk"
@@ -2624,6 +2629,9 @@
   ],
   "/gcores/tags/:id/:tab?": [
     "StevenRCE0",
+    "nczitzk"
+  ],
+  "/gcores/videos": [
     "nczitzk"
   ],
   "/gdsrx/:id?": [],
@@ -3492,8 +3500,17 @@
   "/hrbeu/yjsy/list/:id": [
     "Derekmini"
   ],
+  "/hrbust/cs/:category?": [
+    "cscnk52"
+  ],
+  "/hrbust/gzc/:category?": [
+    "cscnk52"
+  ],
   "/hrbust/jwzx/:type?/:page?": [
     "LenaNouzen",
+    "cscnk52"
+  ],
+  "/hrbust/lib/:category?": [
     "cscnk52"
   ],
   "/hrbust/news/:category?": [
@@ -4061,6 +4078,12 @@
   "/jornada/:date?/:category?": [
     "Thealf154"
   ],
+  "/joshwcomeau/latest/:category?": [
+    "Rjnishant530"
+  ],
+  "/joshwcomeau/popular": [
+    "Rjnishant530"
+  ],
   "/jou/tzgg": [
     "real-jiakai"
   ],
@@ -4566,7 +4589,8 @@
     "nczitzk"
   ],
   "/meituan/tech": [
-    "ktKongTong"
+    "ktKongTong",
+    "cscnk52"
   ],
   "/metacritic/:type?/:sort?/:filter?": [],
   "/meteor/boards": [
@@ -6836,6 +6860,9 @@
   "/szse/rule/:channel{.+}?": [
     "nczitzk"
   ],
+  "/szse/disclosure/listed/notice": [
+    "nczitzk"
+  ],
   "/szu/yz/:type?": [
     "NagaruZ"
   ],
@@ -8077,6 +8104,9 @@
   "/youku/channel/:channelId/:embed?": [
     "xyqfer",
     "Fatpandac"
+  ],
+  "/youmemark/:userid": [
+    "pseudoyu"
   ],
   "/youtube/channel/:id/:embed?": [
     "DIYgod"
