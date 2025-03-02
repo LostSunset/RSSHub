@@ -1464,6 +1464,9 @@
   "/cmpxchg8b/articles": [
     "yuguorui"
   ],
+  "/cmu/andypavlo/blog": [
+    "mocusez"
+  ],
   "/cn-healthcare/index": [
     "qnloft"
   ],
@@ -2294,6 +2297,9 @@
   "/fanbox/:creator": [
     "KarasuShin"
   ],
+  "/fangchan/list/:id?": [
+    "nczitzk"
+  ],
   "/fanqienovel/page/:bookId": [
     "TonyRL"
   ],
@@ -2450,6 +2456,9 @@
   "/foreverblog/feeds": [
     "7Wate",
     "a180285"
+  ],
+  "/forklog/news": [
+    "raven428"
   ],
   "/fortnite/news/:options?": [
     "lyqluis"
@@ -2970,6 +2979,9 @@
     "Yoge-Code"
   ],
   "/gov/mmht/*": [],
+  "/gov/moa/gjs/:category{.+}?": [
+    "nczitzk"
+  ],
   "/gov/moa/suburl/:suburl{.+}": [
     "Origami404",
     "lyqluis"
@@ -3112,6 +3124,12 @@
   ],
   "/gov/taiyuan/rsj/:caty/:page?": [
     "2PoL"
+  ],
+  "/gov/tianjin/tjftz-notice/:channelId": [
+    "HaoyuLee"
+  ],
+  "/gov/tianjin/tjrcgzw-notice/:cate/:subCate": [
+    "HaoyuLee"
   ],
   "/gov/wuhan/sy/whyw": [
     "nczitzk"
@@ -4211,6 +4229,9 @@
   "/kisskiss/blog/:category?": [
     "keocheung"
   ],
+  "/komiic/comic/:id": [
+    "NekoAria"
+  ],
   "/konachan/post/popular_recent/:period?": [
     "magic-akari",
     "NekoAria"
@@ -4290,6 +4311,9 @@
   ],
   "/layoffs/": [
     "BrandNewLifeJackie26"
+  ],
+  "/leagueoflegends/patch-notes": [
+    "noahm"
   ],
   "/learnblockchain/posts/:cid/:sort?": [
     "running-grass"
@@ -6786,6 +6810,13 @@
   "/swjtu/jyzpxx": [
     "qizidog"
   ],
+  "/swjtu/scai/:type": [
+    "AzureG03",
+    "SuperJeason"
+  ],
+  "/swjtu/sports": [
+    "AzureG03"
+  ],
   "/swjtu/xg/:code?": [
     "mobyw"
   ],
@@ -6794,10 +6825,6 @@
   ],
   "/swjtu/jtys/yjs": [
     "qizidog"
-  ],
-  "/swjtu/scai/bks": [
-    "AzureG03",
-    "SuperJeason"
   ],
   "/swpu/bgw/:code": [
     "CYTMWIA"
@@ -7199,6 +7226,9 @@
   "/topys/:keyword?": [
     "nczitzk"
   ],
+  "/toranoana/news/:category?": [
+    "Tsuyumi25"
+  ],
   "/toutiao/user/token/:token": [
     "TonyRL"
   ],
@@ -7564,6 +7594,9 @@
   ],
   "/wabei/hot-recommend": [
     "p3psi-boo"
+  ],
+  "/wainao/topics/:id?": [
+    "nczitzk"
   ],
   "/wainao/wainao-reads": [
     "lucky13820"
