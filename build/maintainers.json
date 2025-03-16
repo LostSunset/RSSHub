@@ -2673,6 +2673,12 @@
     "StevenRCE0",
     "nczitzk"
   ],
+  "/gcores/topics/:id/recommend": [
+    "nczitzk"
+  ],
+  "/gcores/topics/recommend": [
+    "nczitzk"
+  ],
   "/gcores/videos": [
     "nczitzk"
   ],
@@ -6765,7 +6771,10 @@
   "/stbu/xyxw": [
     "HyperCherry"
   ],
-  "/stcn/:id?": [
+  "/stcn/article/list/:id?": [
+    "nczitzk"
+  ],
+  "/stcn/article/list/kx": [
     "nczitzk"
   ],
   "/stdaily/digitalpaper": [
@@ -8011,6 +8020,9 @@
   ],
   "/xjtu/std/:category?": [
     "nczitzk"
+  ],
+  "/xjtu/yz/:category?": [
+    "YoghurtGuy"
   ],
   "/xjtu/2yuan/news/:id?": [
     "nczitzk"
