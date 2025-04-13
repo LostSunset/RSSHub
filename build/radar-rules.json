@@ -245,6 +245,123 @@
       }
     ]
   },
+  "199it.com": {
+    "_name": "199it",
+    "www": [
+      {
+        "title": "资讯",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/199itparams=>{const category=params.category;return`/199it${category?`/${category}`:\"\"}`}"
+      },
+      {
+        "title": "最新",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/newly"
+        ],
+        "target": "/199it/newly"
+      },
+      {
+        "title": "报告",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/report"
+        ],
+        "target": "/199it/archives/category/report"
+      },
+      {
+        "title": "新兴产业",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/emerging"
+        ],
+        "target": "/199it/archives/category/emerging"
+      },
+      {
+        "title": "金融科技",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/fintech"
+        ],
+        "target": "/199it/archives/category/fintech"
+      },
+      {
+        "title": "共享经济",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/sharingeconomy"
+        ],
+        "target": "/199it/archives/category/sharingeconomy"
+      },
+      {
+        "title": "移动互联网",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/mobile-internet"
+        ],
+        "target": "/199it/archives/category/mobile-internet"
+      },
+      {
+        "title": "电子商务",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/electronic-commerce"
+        ],
+        "target": "/199it/archives/category/electronic-commerce"
+      },
+      {
+        "title": "社交网络",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/social-network"
+        ],
+        "target": "/199it/archives/category/social-network"
+      },
+      {
+        "title": "网络广告",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/advertising"
+        ],
+        "target": "/199it/archives/category/advertising"
+      },
+      {
+        "title": "投资&amp;经济，互联网金融",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/economic-data"
+        ],
+        "target": "/199it/archives/category/economic-data"
+      },
+      {
+        "title": "服务",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/service"
+        ],
+        "target": "/199it/archives/category/service"
+      },
+      {
+        "title": "网络服务行业",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/dataindustry"
+        ],
+        "target": "/199it/archives/category/dataindustry"
+      },
+      {
+        "title": "用户研究",
+        "docs": "https://docs.rsshub.app/routes/new-media",
+        "source": [
+          "/archives/category/internet-users"
+        ],
+        "target": "/199it/archives/category/internet-users"
+      }
+    ]
+  },
   "1lou.me": {
     "_name": "BT 之家 1LOU 站",
     ".": [
@@ -4655,12 +4772,12 @@
     "_name": "AP News",
     ".": [
       {
-        "title": "News",
+        "title": "News (from mobile client API)",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
           "/"
         ],
-        "target": "/apnews/api/:tags?"
+        "target": "/apnews/mobile/:path{.+}?"
       },
       {
         "title": "News",
@@ -8205,6 +8322,24 @@
   },
   "cdu.edu.cn": {
     "_name": "成都大学",
+    "news": [
+      {
+        "title": "成大人物",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/cdu/cdrw"
+      },
+      {
+        "title": "通知公告",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/"
+        ],
+        "target": "/cdu/tzggcdunews"
+      }
+    ],
     "jw": [
       {
         "title": "教务处通知公告",
@@ -8213,16 +8348,6 @@
           "/"
         ],
         "target": "/cdu/jwgg"
-      }
-    ],
-    "news": [
-      {
-        "title": "通知公告",
-        "docs": "https://docs.rsshub.app/routes/university",
-        "source": [
-          "/"
-        ],
-        "target": "/cdu/tzggcdunews"
       }
     ]
   },
@@ -13360,6 +13485,14 @@
         "target": "/gcores/gcores/news"
       },
       {
+        "title": "预告",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/radios/preview"
+        ],
+        "target": "/gcores/gcores/radios/preview"
+      },
+      {
         "title": "标签",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
@@ -13712,6 +13845,20 @@
           "/"
         ],
         "target": "/gisreportsonline/:path{.*}"
+      }
+    ]
+  },
+  "gitcode.com": {
+    "_name": "GitCode",
+    ".": [
+      {
+        "title": "仓库提交",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/:owner/:repo/commits",
+          "/:owner/:repo/commits/:branch"
+        ],
+        "target": "/gitcodeparams=>`/gitcode/commits/${params.owner}/${params.repo}${params.branch?`/${params.branch}`:\"\"}`"
       }
     ]
   },
@@ -15332,6 +15479,19 @@
           "/s78/:column"
         ],
         "target": "/gov/moe/s78/:column"
+      }
+    ]
+  },
+  "mof.gov.cn": {
+    "_name": "上海市人民政府",
+    "gss": [
+      {
+        "title": "关税政策文件",
+        "docs": "https://docs.rsshub.app/routes/government",
+        "source": [
+          "/gzdt/:category/"
+        ],
+        "target": "/gov/mof/gss/:category"
       }
     ]
   },
@@ -16961,6 +17121,19 @@
           "/novel/:id"
         ],
         "target": "/hameln/chapter/:id"
+      }
+    ]
+  },
+  "hanime1.me": {
+    "_name": "Hanime1",
+    ".": [
+      {
+        "title": "新番预告",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/previews/:date"
+        ],
+        "target": "/hanime1/previews/:date"
       }
     ]
   },
@@ -20018,6 +20191,14 @@
   "jin10.com": {
     "_name": "金十数据",
     ".": [
+      {
+        "title": "外汇",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/jin10/category/:id"
+      },
       {
         "title": "市场快讯",
         "docs": "https://docs.rsshub.app/routes/finance",
@@ -37444,6 +37625,16 @@
           "/index/:category.htm"
         ],
         "target": "/xjtu/yz/:category"
+      }
+    ],
+    "zs": [
+      {
+        "title": "本科招生网",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/:category"
+        ],
+        "target": "/xjtuparams=>{const category=params.category;return`/xjtu/zs${category?`/${category}`:\"\"}`}"
       }
     ],
     "gs": [
