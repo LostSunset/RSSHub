@@ -564,6 +564,12 @@
   "/app-center/release/:user/:app/:distribution_group": [
     "Rongronggg9"
   ],
+  "/app-sales/:category?/:country?": [
+    "nczitzk"
+  ],
+  "/app-sales/mostwanted/:time?/:country?": [
+    "nczitzk"
+  ],
   "/apple/apps/update/:country/:id/:platform?": [
     "EkkoG",
     "nczitzk"
@@ -758,6 +764,9 @@
     "HenryQW",
     "DIYgod",
     "pseudoyu"
+  ],
+  "/bbc/learningenglish/:channel?": [
+    "Blank0120"
   ],
   "/bbcnewslabs/news": [
     "elxy"
@@ -1466,6 +1475,12 @@
   "/chlinlearn/daily-blog": [
     "huyyi"
   ],
+  "/chnmuseum/zx/xingnew": [
+    "ShabbyWhineYear"
+  ],
+  "/chnmuseum/zx/xwzt": [
+    "ShabbyWhineYear"
+  ],
   "/chongbuluo/newthread": [
     "qiye45"
   ],
@@ -1492,6 +1507,9 @@
   ],
   "/cib/whpj/:format?": [
     "Qixingchen"
+  ],
+  "/cih-index/report/list/:report?": [
+    "TonyRL"
   ],
   "/ciidbnu/:id?": [
     "nczitzk"
@@ -8490,6 +8508,9 @@
   ],
   "/zagg/new-arrivals/:query?": [
     "EthanWng97"
+  ],
+  "/zaimanhua/comic/:id": [
+    "kjasn"
   ],
   "/zaimanhua/update": [
     "kjasn"
