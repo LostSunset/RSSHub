@@ -5167,6 +5167,14 @@
           "/:country/service-programs"
         ],
         "target": "/apple/exchange_repair/:country"
+      },
+      {
+        "title": "Security releases",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/:language/100100"
+        ],
+        "target": "/appleparams=>{const language=params.language;return`/apple/security-releases${language?`/${language}`:\"\"}`}"
       }
     ],
     "podcasts": [
@@ -5850,6 +5858,19 @@
           "/p/:id"
         ],
         "target": "/baidu/tieba/post/lz/:id"
+      }
+    ]
+  },
+  "bakamh.com": {
+    "_name": "巴卡漫画",
+    ".": [
+      {
+        "title": "漫画更新",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/manga/:name/"
+        ],
+        "target": "/bakamh/manga/:name"
       }
     ]
   },
@@ -33997,6 +34018,17 @@
         "target": "/steam/appcommunityfeed/:appid"
       },
       {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/game",
+        "source": [
+          "/app/:appid",
+          "/app/:appid/allnews",
+          "/app/:appid/announcements",
+          "/app/:appid/news"
+        ],
+        "target": "/steam/news/:appid"
+      },
+      {
         "title": "Sharefile Changelog",
         "docs": "https://docs.rsshub.app/routes/game",
         "source": [
@@ -37230,6 +37262,19 @@
       }
     ]
   },
+  "visualstudio.com": {
+    "_name": "Visual Studio",
+    "code": [
+      {
+        "title": "Code Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/visualstudio/code/blog"
+      }
+    ]
+  },
   "vocus.cc": {
     "_name": "方格子",
     ".": [
@@ -37506,6 +37551,19 @@
           "/"
         ],
         "target": "/wanqu/news"
+      }
+    ]
+  },
+  "warp.dev": {
+    "_name": "Warp",
+    "www": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/warp/blog"
       }
     ]
   },
@@ -38185,6 +38243,14 @@
   "xjtu.edu.cn": {
     "_name": "西安交通大学",
     "ee": [
+      {
+        "title": "电气学院通知",
+        "docs": "https://docs.rsshub.app/routes/university",
+        "source": [
+          "/jzxx/:category?.htm"
+        ],
+        "target": "/xjtu/ee/jzxx/:category?"
+      },
       {
         "title": "电气学院",
         "docs": "https://docs.rsshub.app/routes/university",
@@ -38873,6 +38939,19 @@
           "/u/:id"
         ],
         "target": "/zcool/user/:id"
+      }
+    ]
+  },
+  "zed.dev": {
+    "_name": "Zed",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/"
+        ],
+        "target": "/zed/blog"
       }
     ]
   },

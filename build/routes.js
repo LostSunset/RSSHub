@@ -10027,6 +10027,58 @@ export default {
         "url": "www.apple.com/apple-podcasts/",
         "location": "podcast.ts",
         "module": () => import('@/routes/apple/podcast.ts')
+      },
+      "/security-releases/:language?": {
+        "path": "/security-releases/:language?",
+        "name": "Security releases",
+        "url": "support.apple.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/apple/security-releases",
+        "parameters": {
+          "language": {
+            "description": "Language, `en-us` by default"
+          }
+        },
+        "description": ":::tip\nTo subscribe to [Apple security releases](https://support.apple.com/en-us/100100), where the source URL is `https://support.apple.com/en-us/100100`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/apple/security-releases/en-us`](https://rsshub.app/apple/security-releases/en-us).\n:::\n",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "support.apple.com/:language/100100"
+            ]
+          }
+        ],
+        "view": 0,
+        "zh": {
+          "path": "/security-releases/:language?",
+          "name": "安全性发布",
+          "url": "support.apple.com",
+          "maintainers": [
+            "nczitzk"
+          ],
+          "example": "/apple/security-releases",
+          "parameters": {
+            "language": {
+              "description": "语言，默认为 `en-us`，可在对应页 URL 中找到"
+            }
+          },
+          "description": ":::tip\n若订阅 [Apple 安全性发布](https://support.apple.com/zh-cn/100100)，网址为 `https://support.apple.com/zh-cn/100100`，请截取 `https://support.apple.com/` 到末尾 `/100100` 的部分 `zh-cn` 作为 `language` 参数填入，此时目标路由为 [`/apple/security-releases/zh-cn`](https://rsshub.app/apple/security-releases/zh-cn)。\n:::\n"
+        },
+        "location": "security-releases.ts",
+        "module": () => import('@/routes/apple/security-releases.ts')
       }
     },
     "name": "Apple",
@@ -11837,6 +11889,40 @@ export default {
     "name": "白鲸出海",
     "url": "baijing.cn",
     "description": "白鲸出海",
+    "lang": "zh-CN"
+  },
+  "bakamh": {
+    "routes": {
+      "/manga/:name": {
+        "path": "/manga/:name",
+        "categories": [
+          "anime"
+        ],
+        "example": "/bakamh/manga/最强家丁",
+        "parameters": {
+          "name": "漫画名称，漫画主页的地址栏中"
+        },
+        "radar": [
+          {
+            "source": [
+              "bakamh.com/manga/:name/"
+            ]
+          }
+        ],
+        "name": "漫画更新",
+        "maintainers": [
+          "yoyobase"
+        ],
+        "url": "bakamh.com",
+        "location": "manga.ts",
+        "module": () => import('@/routes/bakamh/manga.ts')
+      }
+    },
+    "name": "巴卡漫画",
+    "url": "bakamh.com",
+    "categories": [
+      "anime"
+    ],
     "lang": "zh-CN"
   },
   "bandcamp": {
@@ -23533,7 +23619,7 @@ export default {
         ],
         "name": "制作者 / 游戏新闻",
         "maintainers": [
-          "chengyuhui"
+          "kmod-midori"
         ],
         "location": "entry.ts",
         "module": () => import('@/routes/cngal/entry.ts')
@@ -23565,7 +23651,7 @@ export default {
         ],
         "name": "每周速报",
         "maintainers": [
-          "chengyuhui"
+          "kmod-midori"
         ],
         "url": "www.cngal.org/",
         "location": "weekly.ts",
@@ -34053,7 +34139,7 @@ export default {
         },
         "name": "FINAL FANTASY XIV (The Lodestone)",
         "maintainers": [
-          "chengyuhui"
+          "kmod-midori"
         ],
         "description": "Region\n\n| North Ameria | Europe | France | Germany | Japan |\n| ------------ | ------ | ------ | ------- | ----- |\n| na           | eu     | fr     | de      | jp    |\n\n  Category\n\n| all | topics | notices | maintenance | updates | status | developers |\n| --- | ------ | ------- | ----------- | ------- | ------ | ---------- |",
         "location": "ff14-global.ts",
@@ -34082,7 +34168,7 @@ export default {
         },
         "name": "FINAL FANTASY XIV (The Lodestone)",
         "maintainers": [
-          "chengyuhui"
+          "kmod-midori"
         ],
         "description": "Region\n\n| North Ameria | Europe | France | Germany | Japan |\n| ------------ | ------ | ------ | ------- | ----- |\n| na           | eu     | fr     | de      | jp    |\n\n  Category\n\n| all | topics | notices | maintenance | updates | status | developers |\n| --- | ------ | ------- | ----------- | ------- | ------ | ---------- |",
         "location": "ff14-global.ts",
@@ -91571,6 +91657,46 @@ export default {
         "location": "curator.ts",
         "module": () => import('@/routes/steam/curator.ts')
       },
+      "/news/:appid/:language?": {
+        "path": "/news/:appid/:language?",
+        "name": "News",
+        "url": "steamcommunity.com",
+        "maintainers": [
+          "keocheung"
+        ],
+        "example": "/news/958260/english",
+        "parameters": {
+          "appid": "Game App ID, all digits, can be found in the URL",
+          "language": "Language, english by default, see below for more languages"
+        },
+        "description": "\n<details>\n<summary>More languages</summary>\n\n| 语言代码                                          | 语言名称   |\n| ------------------------------------------------- | ---------- |\n| English                                           | english    |\n| Español - España (Spanish - Spain)                | spanish    |\n| Français (French)                                 | french     |\n| Italiano (Italian)                                | italian    |\n| Deutsch (German)                                  | german     |\n| Ελληνικά (Greek)                                  | greek      |\n| 한국어 (Korean)                                   | koreana    |\n| 简体中文 (Simplified Chinese)                     | schinese   |\n| 繁體中文 (Traditional Chinese)                    | tchinese   |\n| Русский (Russian)                                 | russian    |\n| ไทย (Thai)                                        | thai       |\n| 日本語 (Japanese)                                 | japanese   |\n| Português (Portuguese)                            | portuguese |\n| Português - Brasil (Portuguese - Brazil)          | brazilian  |\n| Polski (Polish)                                   | polish     |\n| Dansk (Danish)                                    | danish     |\n| Nederlands (Dutch)                                | dutch      |\n| Suomi (Finnish)                                   | finnish    |\n| Norsk (Norwegian)                                 | norwegian  |\n| Svenska (Swedish)                                 | swedish    |\n| Čeština (Czech)                                   | czech      |\n| Magyar (Hungarian)                                | hungarian  |\n| Română (Romanian)                                 | romanian   |\n| Български (Bulgarian)                             | bulgarian  |\n| Türkçe (Turkish)                                  | turkish    |\n| Українська (Ukrainian)                            | ukrainian  |\n| Tiếng Việt (Vietnamese)                           | vietnamese |\n| Español - Latinoamérica (Spanish - Latin America) | latam      |\n\n</details>\n    ",
+        "categories": [
+          "game"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "title": "News",
+            "source": [
+              "steamcommunity.com/app/:appid",
+              "steamcommunity.com/app/:appid/allnews",
+              "steamcommunity.com/app/:appid/announcements",
+              "steamcommunity.com/app/:appid/news"
+            ],
+            "target": "/news/:appid"
+          }
+        ],
+        "location": "news.ts",
+        "module": () => import('@/routes/steam/news.ts')
+      },
       "/search/:params": {
         "path": "/search/:params",
         "categories": [
@@ -96482,6 +96608,34 @@ export default {
     },
     "name": "Tableau",
     "url": "public.tableau.com",
+    "lang": "en"
+  },
+  "tailwindcss": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/tailwindcss/blog",
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Blog",
+        "maintainers": [
+          "goestav"
+        ],
+        "location": "blog.ts",
+        "module": () => import('@/routes/tailwindcss/blog.ts')
+      }
+    },
+    "name": "TailwindCSS",
+    "url": "tailwindcss.com",
     "lang": "en"
   },
   "taiwanmobile": {
@@ -103880,6 +104034,46 @@ export default {
       "study"
     ]
   },
+  "visualstudio": {
+    "routes": {
+      "/code/blog": {
+        "path": "/code/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/visualstudio/code/blog",
+        "url": "code.visualstudio.com",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "code.visualstudio.com/"
+            ],
+            "target": "/code/blog"
+          }
+        ],
+        "name": "Code Blog",
+        "maintainers": [
+          "cscnk52"
+        ],
+        "description": "Provides a better reading experience (full articles) over the official ones.",
+        "view": 5,
+        "location": "code-blog.ts",
+        "module": () => import('@/routes/visualstudio/code-blog.ts')
+      }
+    },
+    "name": "Visual Studio",
+    "url": "visualstudio.com",
+    "lang": "en"
+  },
   "vocus": {
     "routes": {
       "/publication/:id": {
@@ -105121,6 +105315,46 @@ export default {
     "name": "湾区日报",
     "url": "wanqu.co",
     "lang": "zh-CN"
+  },
+  "warp": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/warp/blog",
+        "url": "warp.dev",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.warp.dev"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "name": "Blog",
+        "maintainers": [
+          "cscnk52"
+        ],
+        "description": "Provides a better reading experience (full articles) over the official ones.",
+        "view": 5,
+        "location": "blog.ts",
+        "module": () => import('@/routes/warp/blog.ts')
+      }
+    },
+    "name": "Warp",
+    "url": "warp.dev",
+    "lang": "en"
   },
   "warthunder": {
     "routes": {
@@ -108056,7 +108290,8 @@ export default {
         "maintainers": [
           "hondajojo",
           "jtsang4",
-          "pseudoyu"
+          "pseudoyu",
+          "cscnk52"
         ],
         "url": "xiaoyuzhoufm.com/",
         "location": "podcast.ts",
@@ -108390,6 +108625,38 @@ export default {
         "description": "打开一个类似 <https://dean.xjtu.edu.cn/jxxx/jxtz2.htm> 的网址，在 `.cn` 后的内容就是 subpath，此例中是 `jxxx/jxtz2`",
         "location": "dean.ts",
         "module": () => import('@/routes/xjtu/dean.ts')
+      },
+      "/ee/jzxx/:category?": {
+        "path": "/ee/jzxx/:category?",
+        "categories": [
+          "university"
+        ],
+        "example": "/xjtu/ee/jzxx/bks",
+        "parameters": {
+          "category": "类别：`bks`，默认为首页，详情在描述中"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "ee.xjtu.edu.cn/jzxx/:category?.htm"
+            ]
+          }
+        ],
+        "name": "电气学院通知",
+        "maintainers": [
+          "riverflows2333"
+        ],
+        "description": "栏目类型\n\n| 主页 | 本科生 | 研究生 | 科研学术 | 采购招标 | 招聘就业 | 行政办公\n| --- | ----- | ----- | ------ | ------- | ------ | ------\n|  -  |  bks  |  yjs  |  kyxs  |   cgzb  |  zpjy  | xzbg  ",
+        "location": "ee-jzxx.ts",
+        "module": () => import('@/routes/xjtu/ee-jzxx.ts')
       },
       "/ee/:id?": {
         "path": "/ee/:id?",
@@ -110689,7 +110956,8 @@ export default {
           "requireConfig": [
             {
               "name": "YOUTUBE_KEY",
-              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)"
+              "description": " YouTube API Key, support multiple keys, split them with `,`, [API Key application](https://console.developers.google.com/)",
+              "optional": true
             }
           ],
           "requirePuppeteer": false,
@@ -111665,6 +111933,46 @@ export default {
     "name": "站酷",
     "url": "www.zcool.com.cn",
     "lang": "zh-CN"
+  },
+  "zed": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/zed/blog",
+        "url": "zed.dev",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "zed.dev"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "name": "Blog",
+        "maintainers": [
+          "cscnk52"
+        ],
+        "description": "Provides a better reading experience (full articles) over the official ones.",
+        "view": 5,
+        "location": "blog.ts",
+        "module": () => import('@/routes/zed/blog.ts')
+      }
+    },
+    "name": "Zed",
+    "url": "zed.dev",
+    "lang": "en"
   },
   "zhibo8": {
     "routes": {
