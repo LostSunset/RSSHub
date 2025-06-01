@@ -21422,10 +21422,33 @@
         "title": "Posts",
         "docs": "https://docs.rsshub.app/routes/anime",
         "source": [
-          "/:source/user/:id",
           "/"
         ],
-        "target": "/kemono/:source?/:id?"
+        "target": "/kemono/kemono"
+      },
+      {
+        "title": "Posts",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:source/user/:id"
+        ],
+        "target": "/kemono/kemono/:source/:id"
+      },
+      {
+        "title": "Posts",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:source/user/:id/announcements"
+        ],
+        "target": "/kemono/kemono/:source/:id/announcements"
+      },
+      {
+        "title": "Posts",
+        "docs": "https://docs.rsshub.app/routes/anime",
+        "source": [
+          "/:source/user/:id/fancards"
+        ],
+        "target": "/kemono/kemono/:source/:id/fancards"
       }
     ]
   },
@@ -21891,6 +21914,19 @@
           "/"
         ],
         "target": "/leiphone/newsflash"
+      }
+    ]
+  },
+  "lenovo.com.cn": {
+    "_name": "联想",
+    ".": [
+      {
+        "title": "驱动",
+        "docs": "https://docs.rsshub.app/routes/program-update",
+        "source": [
+          "/"
+        ],
+        "target": "/lenovo/drive/:selName"
       }
     ]
   },
@@ -25458,7 +25494,7 @@
         "title": "最近更新",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
-          "/dm397/new",
+          "/dm514/new",
           "/new",
           "/"
         ],
@@ -25473,7 +25509,7 @@
         "title": "最近更新",
         "docs": "https://docs.rsshub.app/routes/multimedia",
         "source": [
-          "/dm397/new",
+          "/dm514/new",
           "/new",
           "/"
         ],
@@ -27325,9 +27361,10 @@
         "title": "新聞",
         "docs": "https://docs.rsshub.app/routes/traditional-media",
         "source": [
+          "/home/:category",
           "/"
         ],
-        "target": "/now/news/:category?/:id?"
+        "target": "/now/news/:category?"
       }
     ]
   },
@@ -29690,7 +29727,7 @@
     ]
   },
   "picuki.com": {
-    "_name": "Instagram",
+    "_name": "TikTok",
     "www": [
       {
         "title": "User Profile - Picuki",
@@ -29704,9 +29741,9 @@
         "title": "User Profile - Picuki",
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
-          "/profile-tagged/:id"
+          "/story/:id"
         ],
-        "target": "/picuki/profile/:id/tagged"
+        "target": "/picuki/profile/:id/story"
       }
     ]
   },
@@ -34073,6 +34110,20 @@
           "/search/:params"
         ],
         "target": "/steam/search/:params"
+      }
+    ]
+  },
+  "stheadline.com": {
+    "_name": "星島日報",
+    "www": [
+      {
+        "title": "即時",
+        "docs": "https://docs.rsshub.app/routes/other",
+        "source": [
+          "/theme/:category/chineseCategory",
+          "/:category/:chineseCategory"
+        ],
+        "target": "/stheadline/std/:category"
       }
     ]
   },
@@ -38774,7 +38825,8 @@
         "docs": "https://docs.rsshub.app/routes/social-media",
         "source": [
           "/user/:username",
-          "/:username"
+          "/:username",
+          "/:username/videos"
         ],
         "target": "/youtube/user/:username"
       }
@@ -38790,6 +38842,84 @@
           "/materials"
         ],
         "target": "/youzhiyouxing/materials"
+      }
+    ]
+  },
+  "yuanliao.info": {
+    "_name": "猿料",
+    ".": [
+      {
+        "title": "主题",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/",
+          "/t/:tag"
+        ],
+        "target": "/yuanliaoparams=>{const tag=params.tag;return`/yuanliao${tag?`/${tag}`:\"\"}`}"
+      },
+      {
+        "title": "问题反馈",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/bug-report"
+        ],
+        "target": "/yuanliao/bug-report"
+      },
+      {
+        "title": "Windows",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/windows"
+        ],
+        "target": "/yuanliao/windows"
+      },
+      {
+        "title": "macOS",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/macos"
+        ],
+        "target": "/yuanliao/macos"
+      },
+      {
+        "title": "Linux",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/linux"
+        ],
+        "target": "/yuanliao/linux"
+      },
+      {
+        "title": "意见建议",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/suggestions"
+        ],
+        "target": "/yuanliao/suggestions"
+      },
+      {
+        "title": "插件发布",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/plugins"
+        ],
+        "target": "/yuanliao/plugins"
+      },
+      {
+        "title": "插件需求",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/plugin-needs"
+        ],
+        "target": "/yuanliao/plugin-needs"
+      },
+      {
+        "title": "开发者",
+        "docs": "https://docs.rsshub.app/routes/bbs",
+        "source": [
+          "/t/developers"
+        ],
+        "target": "/yuanliao/developers"
       }
     ]
   },
@@ -39304,6 +39434,19 @@
           "/:type/list.htm"
         ],
         "target": "/zjut/www/:type"
+      }
+    ]
+  },
+  "zongheng.org": {
+    "_name": "纵横中文网",
+    "www": [
+      {
+        "title": "章节更新",
+        "docs": "https://docs.rsshub.app/routes/reading",
+        "source": [
+          "/detail/:id"
+        ],
+        "target": "/zongheng/detail/:id"
       }
     ]
   },

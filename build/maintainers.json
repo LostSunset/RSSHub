@@ -3502,6 +3502,10 @@
     "iamqiz",
     "nczitzk"
   ],
+  "/hedwig/posts/:site": [
+    "zwithz",
+    "GetToSet"
+  ],
   "/hellobtc/information/:channel?": [
     "Fatpandac"
   ],
@@ -4428,8 +4432,9 @@
   "/kelownacapnews/:type": [
     "hualiong"
   ],
-  "/kemono/:source?/:id?": [
-    "nczitzk"
+  "/kemono/:source?/:id?/:type?": [
+    "nczitzk",
+    "AiraNadih"
   ],
   "/kepu/live": [
     "nczitzk"
@@ -4555,6 +4560,9 @@
   "/lemmy/:community/:sort?": [
     "wb14123",
     "pseudoyu"
+  ],
+  "/lenovo/drive/:selName": [
+    "cscnk52"
   ],
   "/lens/profile/:handle": [
     "DIYgod"
@@ -5830,7 +5838,8 @@
   "/picnob/user/:id/:type?": [
     "TonyRL",
     "micheal-death",
-    "AiraNadih"
+    "AiraNadih",
+    "DIYgod"
   ],
   "/picuki/profile/:id/:type?/:functionalFlag?": [
     "hoilc",
@@ -7041,7 +7050,9 @@
   "/steam/workshopsearch/:appid?/:routeParams?": [
     "NyaaaDoge"
   ],
-  "/stheadline/std/realtime/:category{.+}?": [],
+  "/stheadline/std/:category{.+}?": [
+    "TonyRL"
+  ],
   "/stockedge/daily-updates/news": [
     "Rjnishant530"
   ],
@@ -7330,7 +7341,8 @@
   ],
   "/theblockbeats/:channel?/:original?": [
     "Fatpandac",
-    "jameshih"
+    "jameshih",
+    "DIYgod"
   ],
   "/thecover/channel/:id?": [
     "yuxinliu-alex"
@@ -7422,6 +7434,9 @@
   ],
   "/thwiki/calendar/:before?/:after?": [
     "aether17"
+  ],
+  "/thzt/blog": [
+    "jihuayu"
   ],
   "/tiddlywiki/releases": [
     "p3psi-boo"
@@ -8497,6 +8512,9 @@
     "Fatpandac",
     "nczitzk"
   ],
+  "/yuanliao/:tag?": [
+    "nczitzk"
+  ],
   "/yuque/:name/:book": [
     "aha2mao",
     "ltaoo"
@@ -8615,7 +8633,8 @@
   ],
   "/zhihu/hot/:category?": [
     "nczitzk",
-    "pseudoyu"
+    "pseudoyu",
+    "DIYgod"
   ],
   "/zhihu/posts/:usertype/:id": [
     "whtsky",
@@ -8741,6 +8760,9 @@
   ],
   "/zodgame/forum/:fid?": [
     "FeCCC"
+  ],
+  "/zongheng/detail/:id": [
+    "TonyRL"
   ],
   "/zotero/versions": [
     "jasongzy"
