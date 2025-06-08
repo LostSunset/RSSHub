@@ -279,7 +279,8 @@
       "/music/djradio/:id/:info?": {
         "path": "/music/djradio/:id/:info?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/163/music/djradio/347317067",
         "parameters": {
@@ -526,7 +527,8 @@
       "/:id?": {
         "path": "/:id?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/2048/2",
         "parameters": {
@@ -947,7 +949,8 @@
         },
         "description": "::: tip\n  若订阅 [7×24小时要闻直播](https://news.10jqka.com.cn/realtimenews.html) 的 `公告` 标签。将 `公告` 作为标签参数填入，此时路由为 [`/10jqka/realtimenews/公告`](https://rsshub.app/10jqka/realtimenews/公告)。\n  \n  若订阅 [7×24小时要闻直播](https://news.10jqka.com.cn/realtimenews.html) 的 `公告` 和 `A股` 标签。将 `公告,A股` 作为标签参数填入，此时路由为 [`/10jqka/realtimenews/公告,A股`](https://rsshub.app/10jqka/realtimenews/公告,A股)。\n:::\n\n| 全部 | 重要 | A股 | 港股 | 美股 | 机会 | 异动 | 公告 |\n| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |\n    ",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "features": {
           "requireConfig": false,
@@ -3033,7 +3036,8 @@
       "/hot-list/:category?": {
         "path": "/hot-list/:category?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/36kr/hot-list",
         "parameters": {
@@ -3067,7 +3071,8 @@
       "/:category/:subCategory?/:keyword?": {
         "path": "/:category/:subCategory?/:keyword?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/36kr/newsflashes",
         "parameters": {
@@ -3117,7 +3122,8 @@
       "/news/:category?": {
         "path": "/news/:category?",
         "categories": [
-          "game"
+          "game",
+          "popular"
         ],
         "example": "/3dmgame/news",
         "parameters": {
@@ -3735,7 +3741,8 @@
       "/tribe/set/:id": {
         "path": "/tribe/set/:id",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "view": 2,
         "example": "/500px/tribe/set/f5de0b8aa6d54ec486f5e79616418001",
@@ -4618,7 +4625,8 @@
       "/:language?/:category?/:type?": {
         "path": "/:language?/:category?/:type?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/7mmtv/zh/censored_list/all",
         "parameters": {
@@ -5394,7 +5402,8 @@
       "/article/:categoryId/:sortType?/:timeRange?": {
         "path": "/article/:categoryId/:sortType?/:timeRange?",
         "categories": [
-          "anime"
+          "anime",
+          "popular"
         ],
         "view": 0,
         "example": "/acfun/article/110",
@@ -5763,7 +5772,8 @@
       "/category/:category": {
         "path": "/category/:category",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/aeon/category/philosophy",
         "parameters": {
@@ -6804,7 +6814,8 @@
         "example": "/aibase/news",
         "description": "获取 AI 资讯列表",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "features": {
           "requireConfig": false,
@@ -7862,7 +7873,8 @@
       "/column/:id": {
         "path": "/column/:id",
         "categories": [
-          "reading"
+          "reading",
+          "popular"
         ],
         "example": "/aisixiang/column/722",
         "parameters": {
@@ -9976,7 +9988,8 @@
       "/apps/update/:country/:id/:platform?": {
         "path": "/apps/update/:country/:id/:platform?",
         "categories": [
-          "program-update"
+          "program-update",
+          "popular"
         ],
         "view": 5,
         "example": "/apple/apps/update/us/id408709785",
@@ -12111,6 +12124,308 @@
     "url": "bandcamp.com",
     "lang": "en"
   },
+  "bandisoft": {
+    "routes": {
+      "/history/:id?/:language?": {
+        "path": "/history/:id?/:language?",
+        "name": "History",
+        "url": "www.bandisoft.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/bandisoft/history/bandizip",
+        "parameters": {
+          "id": {
+            "description": "ID, `bandizip` by default",
+            "options": [
+              {
+                "label": "Bandizip",
+                "value": "bandizip"
+              },
+              {
+                "label": "Bandizip for Mac",
+                "value": "bandizip.mac"
+              },
+              {
+                "label": "BandiView",
+                "value": "bandiview"
+              },
+              {
+                "label": "Honeycam",
+                "value": "honeycam"
+              }
+            ]
+          },
+          "language": {
+            "description": "Language, `en` by default",
+            "options": [
+              {
+                "label": "English",
+                "value": "en"
+              },
+              {
+                "label": "中文(简体)",
+                "value": "cn"
+              },
+              {
+                "label": "中文(繁體)",
+                "value": "tw"
+              },
+              {
+                "label": "日本語",
+                "value": "jp"
+              },
+              {
+                "label": "Русский",
+                "value": "ru"
+              },
+              {
+                "label": "Español",
+                "value": "es"
+              },
+              {
+                "label": "Français",
+                "value": "fr"
+              },
+              {
+                "label": "Deutsch",
+                "value": "de"
+              },
+              {
+                "label": "Italiano",
+                "value": "it"
+              },
+              {
+                "label": "Slovenčina",
+                "value": "sk"
+              },
+              {
+                "label": "Українська",
+                "value": "uk"
+              },
+              {
+                "label": "Беларуская",
+                "value": "be"
+              },
+              {
+                "label": "Dansk",
+                "value": "da"
+              },
+              {
+                "label": "Polski",
+                "value": "pl"
+              },
+              {
+                "label": "Português Brasileiro",
+                "value": "br"
+              },
+              {
+                "label": "Čeština",
+                "value": "cs"
+              },
+              {
+                "label": "Nederlands",
+                "value": "nl"
+              },
+              {
+                "label": "Slovenščina",
+                "value": "sl"
+              },
+              {
+                "label": "Türkçe",
+                "value": "tr"
+              },
+              {
+                "label": "ภาษาไทย",
+                "value": "th"
+              },
+              {
+                "label": "Ελληνικά",
+                "value": "gr"
+              },
+              {
+                "label": "O'zbek",
+                "value": "uz"
+              },
+              {
+                "label": "Romanian",
+                "value": "ro"
+              },
+              {
+                "label": "한국어",
+                "value": "kr"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\nTo subscribe to [Bandizip Version History](https://www.bandisoft.com/bandizip/history/), where the source URL is `https://www.bandisoft.com/bandizip/history/`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/bandisoft/history/bandizip`](https://rsshub.app/bandisoft/history/bandizip).\n:::\n\n<details>\n  <summary>More languages</summary>\n\n| Language             | ID  |\n| -------------------- | --- |\n| English              | en  |\n| 中文(简体)           | cn  |\n| 中文(繁體)           | tw  |\n| 日本語               | jp  |\n| Русский              | ru  |\n| Español              | es  |\n| Français             | fr  |\n| Deutsch              | de  |\n| Italiano             | it  |\n| Slovenčina           | sk  |\n| Українська           | uk  |\n| Беларуская           | be  |\n| Dansk                | da  |\n| Polski               | pl  |\n| Português Brasileiro | br  |\n| Čeština              | cs  |\n| Nederlands           | nl  |\n| Slovenščina          | sl  |\n| Türkçe               | tr  |\n| ภาษาไทย              | th  |\n| Ελληνικά             | gr  |\n| Oʻzbek               | uz  |\n| Romanian             | ro  |\n| 한국어               | kr  |\n\n</details>\n",
+        "categories": [
+          "program-update"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.bandisoft.com/:id/history"
+            ]
+          }
+        ],
+        "view": 0,
+        "zh": {
+          "path": "/history/:id?/:language?",
+          "name": "更新记录",
+          "url": "www.bandisoft.com",
+          "maintainers": [
+            "nczitzk"
+          ],
+          "example": "/bandisoft/history/bandizip",
+          "parameters": {
+            "id": {
+              "description": "ID, 默认为 `bandizip`，可在对应产品页 URL 中找到",
+              "options": [
+                {
+                  "label": "Bandizip",
+                  "value": "bandizip"
+                },
+                {
+                  "label": "Bandizip for Mac",
+                  "value": "bandizip.mac"
+                },
+                {
+                  "label": "BandiView",
+                  "value": "bandiview"
+                },
+                {
+                  "label": "Honeycam",
+                  "value": "honeycam"
+                }
+              ]
+            },
+            "language": {
+              "description": "地区, 默认为 `en`",
+              "options": [
+                {
+                  "label": "English",
+                  "value": "en"
+                },
+                {
+                  "label": "中文(简体)",
+                  "value": "cn"
+                },
+                {
+                  "label": "中文(繁體)",
+                  "value": "tw"
+                },
+                {
+                  "label": "日本語",
+                  "value": "jp"
+                },
+                {
+                  "label": "Русский",
+                  "value": "ru"
+                },
+                {
+                  "label": "Español",
+                  "value": "es"
+                },
+                {
+                  "label": "Français",
+                  "value": "fr"
+                },
+                {
+                  "label": "Deutsch",
+                  "value": "de"
+                },
+                {
+                  "label": "Italiano",
+                  "value": "it"
+                },
+                {
+                  "label": "Slovenčina",
+                  "value": "sk"
+                },
+                {
+                  "label": "Українська",
+                  "value": "uk"
+                },
+                {
+                  "label": "Беларуская",
+                  "value": "be"
+                },
+                {
+                  "label": "Dansk",
+                  "value": "da"
+                },
+                {
+                  "label": "Polski",
+                  "value": "pl"
+                },
+                {
+                  "label": "Português Brasileiro",
+                  "value": "br"
+                },
+                {
+                  "label": "Čeština",
+                  "value": "cs"
+                },
+                {
+                  "label": "Nederlands",
+                  "value": "nl"
+                },
+                {
+                  "label": "Slovenščina",
+                  "value": "sl"
+                },
+                {
+                  "label": "Türkçe",
+                  "value": "tr"
+                },
+                {
+                  "label": "ภาษาไทย",
+                  "value": "th"
+                },
+                {
+                  "label": "Ελληνικά",
+                  "value": "gr"
+                },
+                {
+                  "label": "O'zbek",
+                  "value": "uz"
+                },
+                {
+                  "label": "Romanian",
+                  "value": "ro"
+                },
+                {
+                  "label": "한국어",
+                  "value": "kr"
+                }
+              ]
+            }
+          },
+          "description": ":::tip\n若订阅 [Bandizip 更新记录](https://cn.bandisoft.com/bandizip/history/)，网址为 `https://cn.bandisoft.com/bandizip/history/`，请截取 `cn` 作为 `category` 参数填入，此时目标路由为 [`/bandisoft/:language?/:id?`](https://rsshub.app/bandisoft/:language?/:id?)。\n:::\n\n<details>\n  <summary>更多语言</summary>\n\n| Language             | ID  |\n| -------------------- | --- |\n| English              | en  |\n| 中文(简体)           | cn  |\n| 中文(繁體)           | tw  |\n| 日本語               | jp  |\n| Русский              | ru  |\n| Español              | es  |\n| Français             | fr  |\n| Deutsch              | de  |\n| Italiano             | it  |\n| Slovenčina           | sk  |\n| Українська           | uk  |\n| Беларуская           | be  |\n| Dansk                | da  |\n| Polski               | pl  |\n| Português Brasileiro | br  |\n| Čeština              | cs  |\n| Nederlands           | nl  |\n| Slovenščina          | sl  |\n| Türkçe               | tr  |\n| ภาษาไทย              | th  |\n| Ελληνικά             | gr  |\n| Oʻzbek               | uz  |\n| Romanian             | ro  |\n| 한국어               | kr  |\n\n</details>\n"
+        },
+        "location": "history.ts",
+        "module": "() => import('@/routes/bandisoft/history.ts')"
+      }
+    },
+    "name": "Bandisoft",
+    "apiRoutes": {},
+    "url": "bandisoft.com",
+    "categories": [
+      "program-update"
+    ],
+    "description": "",
+    "lang": "en"
+  },
   "bangumi.moe": {
     "routes": {
       "/*": {
@@ -12521,6 +12836,124 @@
     "url": "bangumi.tv",
     "lang": "zh-CN"
   },
+  "banyuetan": {
+    "routes": {
+      "/:id?": {
+        "path": "/:id?",
+        "name": "栏目",
+        "url": "www.banyuetan.org",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/banyuetan/jinritan",
+        "parameters": {
+          "id": {
+            "description": "栏目 ID，默认为 `jinritan`，即今日谈，可在对应分类页 URL 中找到",
+            "options": [
+              {
+                "label": "今日谈",
+                "value": "jinritan"
+              },
+              {
+                "label": "时政讲解",
+                "value": "shizhengjiangjie"
+              },
+              {
+                "label": "评论",
+                "value": "banyuetanpinglun"
+              },
+              {
+                "label": "基层治理",
+                "value": "jicengzhili"
+              },
+              {
+                "label": "文化",
+                "value": "wenhua"
+              },
+              {
+                "label": "教育",
+                "value": "jiaoyu"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\n订阅 [今日谈](http://www.banyuetan.org/byt/jinritan/)，其源网址为 `http://www.banyuetan.org/byt/jinritan/`，请参考该 URL 指定部分构成参数，此时路由为 [`/banyuetan/jinritan`](https://rsshub.app/banyuetan/jinritan)。\n:::\n\n| 栏目                                                                 | ID                                                                |\n| -------------------------------------------------------------------- | ----------------------------------------------------------------- |\n| [今日谈](http://www.banyuetan.org/byt/jinritan/index.html)           | [jinritan](https://rsshub.app/banyuetan/jinritan)                 |\n| [时政讲解](http://www.banyuetan.org/byt/shizhengjiangjie/index.html) | [shizhengjiangjie](https://rsshub.app/banyuetan/shizhengjiangjie) |\n| [评论](http://www.banyuetan.org/byt/banyuetanpinglun/index.html)     | [banyuetanpinglun](https://rsshub.app/banyuetan/banyuetanpinglun) |\n| [基层治理](http://www.banyuetan.org/byt/jicengzhili/index.html)      | [jicengzhili](https://rsshub.app/banyuetan/jicengzhili)           |\n| [文化](http://www.banyuetan.org/byt/wenhua/index.html)               | [wenhua](https://rsshub.app/banyuetan/wenhua)                     |\n| [教育](http://www.banyuetan.org/byt/jiaoyu/index.html)               | [jiaoyu](https://rsshub.app/banyuetan/jiaoyu)                     |\n\n",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.banyuetan.org/byt/:id"
+            ],
+            "target": "/:id"
+          },
+          {
+            "title": "今日谈",
+            "source": [
+              "www.banyuetan.org/byt/jinritan/index.html"
+            ],
+            "target": "/jinritan"
+          },
+          {
+            "title": "时政讲解",
+            "source": [
+              "www.banyuetan.org/byt/shizhengjiangjie/index.html"
+            ],
+            "target": "/shizhengjiangjie"
+          },
+          {
+            "title": "评论",
+            "source": [
+              "www.banyuetan.org/byt/banyuetanpinglun/index.html"
+            ],
+            "target": "/banyuetanpinglun"
+          },
+          {
+            "title": "基层治理",
+            "source": [
+              "www.banyuetan.org/byt/jicengzhili/index.html"
+            ],
+            "target": "/jicengzhili"
+          },
+          {
+            "title": "文化",
+            "source": [
+              "www.banyuetan.org/byt/wenhua/index.html"
+            ],
+            "target": "/wenhua"
+          },
+          {
+            "title": "教育",
+            "source": [
+              "www.banyuetan.org/byt/jiaoyu/index.html"
+            ],
+            "target": "/jiaoyu"
+          }
+        ],
+        "view": 0,
+        "location": "index.ts",
+        "module": "() => import('@/routes/banyuetan/index.ts')"
+      }
+    },
+    "name": "半月谈",
+    "apiRoutes": {},
+    "url": "banyuetan.org",
+    "categories": [
+      "traditional-media"
+    ],
+    "description": "",
+    "lang": "zh-CN"
+  },
   "baobua": {
     "routes": {
       "/category/:category": {
@@ -12632,7 +13065,8 @@
       "/blog": {
         "path": "/blog",
         "categories": [
-          "blog"
+          "blog",
+          "popular"
         ],
         "example": "/baoyu/blog",
         "radar": [
@@ -12913,7 +13347,8 @@
       "/:user/:type?": {
         "path": "/:user/:type?",
         "categories": [
-          "design"
+          "design",
+          "popular"
         ],
         "view": 2,
         "example": "/behance/mishapetrick",
@@ -13166,6 +13601,51 @@
     "apiRoutes": {},
     "url": "www.bestblogs.dev",
     "lang": "zh-CN"
+  },
+  "bfl": {
+    "routes": {
+      "/announcements": {
+        "path": "/announcements",
+        "categories": [
+          "multimedia"
+        ],
+        "example": "/bfl/announcements",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "bfl.ai/announcements"
+            ],
+            "target": "/announcements",
+            "title": "Announcements"
+          }
+        ],
+        "name": "Announcements",
+        "maintainers": [
+          "thirteenkai"
+        ],
+        "url": "bfl.ai/announcements",
+        "description": "Fetches the latest announcements from Black Forest Labs (bfl.ai). Provides full article content by default with caching.",
+        "location": "announcements.ts",
+        "module": "() => import('@/routes/bfl/announcements.ts')"
+      }
+    },
+    "name": "BFL AI",
+    "apiRoutes": {},
+    "url": "bfl.ai",
+    "categories": [
+      "multimedia"
+    ],
+    "description": "来自黑森林实验室（bfl.ai）的公告和更新，这是一个前沿的人工智能实验室。",
+    "lang": "en"
   },
   "bgmlist": {
     "routes": {
@@ -13434,7 +13914,8 @@
       "/user/dynamic/:uid/:routeParams?": {
         "path": "/user/dynamic/:uid/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/bilibili/user/dynamic/2267573",
@@ -14096,7 +14577,8 @@
           "hyoban"
         ],
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 3,
         "example": "/bilibili/ranking/0",
@@ -14379,7 +14861,8 @@
       "/user/video/:uid/:embed?": {
         "path": "/user/video/:uid/:embed?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 3,
         "example": "/bilibili/user/video/2267573",
@@ -14481,7 +14964,8 @@
       "/weekly/:embed?": {
         "path": "/weekly/:embed?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/bilibili/weekly",
         "parameters": {
@@ -14523,7 +15007,8 @@
       "/announcement/:type": {
         "path": "/announcement/:type",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/binance/announcement/new-cryptocurrency-listing",
@@ -14984,7 +15469,8 @@
       "/announcement/:type/:lang?": {
         "path": "/announcement/:type/:lang?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/bitget/announcement/all/zh-CN",
@@ -15338,7 +15824,8 @@
       "/apod": {
         "path": "/apod",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "view": 2,
         "example": "/bjp/apod",
@@ -15784,7 +16271,8 @@
       "/:site?": {
         "path": "/:site?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/bloomberg/bbiz",
@@ -16317,7 +16805,8 @@
       "/:category": {
         "path": "/:category",
         "categories": [
-          "reading"
+          "reading",
+          "popular"
         ],
         "view": 0,
         "example": "/bookfere/skills",
@@ -16610,7 +17099,8 @@
       "/profile/:handle/:routeParams?": {
         "path": "/profile/:handle/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/bsky/profile/bsky.app",
@@ -19752,7 +20242,8 @@
       "/:site/:category/:name": {
         "path": "/:site/:category/:name",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "example": "/cctv/tv/lm/xwlb",
         "parameters": {
@@ -22068,6 +22559,29 @@
     "url": "chinawriter.com.cn",
     "lang": "zh-CN"
   },
+  "chiphell": {
+    "routes": {
+      "/portal/:catId?": {
+        "path": "/portal/:catId?",
+        "name": "分类",
+        "categories": [
+          "bbs"
+        ],
+        "example": "/chiphell/portal/1",
+        "parameters": {
+          "catId": "分类 ID，可在 URL 中找到，默认为 1"
+        },
+        "maintainers": [
+          "tylinux"
+        ],
+        "location": "portal.ts",
+        "module": "() => import('@/routes/chiphell/portal.ts')"
+      }
+    },
+    "name": "Chiphell",
+    "url": "www.chiphell.com",
+    "lang": "zh-CN"
+  },
   "chlinlearn": {
     "routes": {
       "/daily-blog": {
@@ -22823,6 +23337,30 @@
         "url": "civitai.com/",
         "location": "models.ts",
         "module": "() => import('@/routes/civitai/models.ts')"
+      },
+      "/user/:username/articles": {
+        "path": "/user/:username/articles",
+        "categories": [
+          "program-update"
+        ],
+        "example": "/civitai/user/Chenkin/articles",
+        "parameters": {
+          "username": "Username"
+        },
+        "radar": [
+          {
+            "source": [
+              "civitai.com/user/:username",
+              "civitai.com/user/:username/articles"
+            ]
+          }
+        ],
+        "name": "User Article",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "location": "user.ts",
+        "module": "() => import('@/routes/civitai/user.ts')"
       }
     },
     "name": "Civitai",
@@ -23816,7 +24354,8 @@
       "/weekly": {
         "path": "/weekly",
         "categories": [
-          "anime"
+          "anime",
+          "popular"
         ],
         "view": 0,
         "example": "/cngal/weekly",
@@ -24765,7 +25304,8 @@
       "/huati/:tag": {
         "path": "/huati/:tag",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/coolapk/huati/iPhone",
         "parameters": {
@@ -24828,7 +25368,8 @@
           "/tuwen/:type?"
         ],
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/coolapk/tuwen",
         "parameters": {
@@ -27365,7 +27906,8 @@
       "/tugua": {
         "path": "/tugua",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "example": "/dapenti/tugua",
         "parameters": {},
@@ -30465,7 +31007,8 @@
       "/group/:groupid/:type?": {
         "path": "/group/:groupid/:type?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/douban/group/648102",
@@ -30589,7 +31132,8 @@
       "/list/:type?/:routeParams?": {
         "path": "/list/:type?/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/douban/list/subject_real_time_hotest",
         "parameters": {
@@ -30823,7 +31367,8 @@
       "/people/:userid/status/:routeParams?": {
         "path": "/people/:userid/status/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/douban/people/75118396/status",
@@ -31455,7 +32000,8 @@
       "/:type?/:category?": {
         "path": "/:type?/:category?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/dx2025",
         "parameters": {
@@ -32162,7 +32708,8 @@
       "/report/:category": {
         "path": "/report/:category",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/eastmoney/report/strategyreport",
@@ -32452,7 +32999,8 @@
       "/espresso": {
         "path": "/espresso",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/economist/espresso",
@@ -33054,7 +33602,8 @@
       "/freegames/:locale?/:country?": {
         "path": "/freegames/:locale?/:country?",
         "categories": [
-          "game"
+          "game",
+          "popular"
         ],
         "view": 5,
         "example": "/epicgames/freegames/en-US/US",
@@ -33321,6 +33870,135 @@
     "apiRoutes": {},
     "url": "www.eventernote.com",
     "lang": "ja"
+  },
+  "everia": {
+    "routes": {
+      "/category/:category": {
+        "path": "/category/:category",
+        "categories": [
+          "picture"
+        ],
+        "example": "/everia/category/cosplay",
+        "parameters": {
+          "category": "Category of the image stream"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "everia.club/category/:category"
+            ],
+            "target": "/category/:category"
+          }
+        ],
+        "name": "Images with category",
+        "maintainers": [
+          "KTachibanaM",
+          "AiraNadih"
+        ],
+        "location": "category.ts",
+        "module": "() => import('@/routes/everia/category.ts')"
+      },
+      "/": {
+        "path": "/",
+        "categories": [
+          "picture"
+        ],
+        "example": "/everia",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "everia.club/"
+            ],
+            "target": ""
+          }
+        ],
+        "name": "Latest",
+        "maintainers": [
+          "KTachibanaM",
+          "AiraNadih"
+        ],
+        "location": "latest.ts",
+        "module": "() => import('@/routes/everia/latest.ts')"
+      },
+      "/search/:keyword": {
+        "path": "/search/:keyword",
+        "categories": [
+          "picture"
+        ],
+        "example": "/everia/search/日向坂46",
+        "parameters": {
+          "keyword": "Keyword"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "Search",
+        "maintainers": [
+          "KTachibanaM",
+          "AiraNadih"
+        ],
+        "location": "search.ts",
+        "module": "() => import('@/routes/everia/search.ts')"
+      },
+      "/tag/:tag": {
+        "path": "/tag/:tag",
+        "categories": [
+          "picture"
+        ],
+        "example": "/everia/tag/hinatazaka46-日向坂46",
+        "parameters": {
+          "tag": "Tag of the image stream"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "everia.club/tag/:tag"
+            ],
+            "target": "/tag/:tag"
+          }
+        ],
+        "name": "Images with tag",
+        "maintainers": [
+          "KTachibanaM",
+          "AiraNadih"
+        ],
+        "location": "tag.ts",
+        "module": "() => import('@/routes/everia/tag.ts')"
+      }
+    },
+    "name": "EVERIA.CLUB",
+    "apiRoutes": {},
+    "url": "everia.club"
   },
   "f-droid": {
     "routes": {
@@ -35134,7 +35812,8 @@
       "/profile/:uid": {
         "name": "User subscriptions",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "path": "/profile/:uid",
         "example": "/follow/profile/41279032429549568",
@@ -35293,7 +35972,8 @@
       "/news/:lang?": {
         "path": "/news/:lang?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/followin/news",
@@ -36746,7 +37426,8 @@
       "/kx": {
         "path": "/kx",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 5,
         "example": "/fx678/kx",
@@ -37040,7 +37721,8 @@
       "/gnn/:category?": {
         "path": "/gnn/:category?",
         "categories": [
-          "anime"
+          "anime",
+          "popular"
         ],
         "view": 0,
         "example": "/gamer/gnn/1",
@@ -38141,7 +38823,8 @@
         },
         "description": "::: tip\n  若订阅 [综合报道](https://www.geekpark.net/column/179)，网址为 `https://www.geekpark.net/column/179`。截取 `https://www.geekpark.net/column/` 到末尾的部分 `179` 作为参数填入，此时路由为 [`/geekpark/179`](https://rsshub.app/geekpark/179)。\n:::\n\n| 栏目                                                         | ID                                     |\n| ------------------------------------------------------------ | -------------------------------------- |\n| [综合报道](https://www.geekpark.net/column/179)              | [179](https://rsshub.app/geekpark/179) |\n| [AI新浪潮观察](https://www.geekpark.net/column/304)          | [304](https://rsshub.app/geekpark/304) |\n| [新造车观察](https://www.geekpark.net/column/305)            | [305](https://rsshub.app/geekpark/305) |\n| [财报解读](https://www.geekpark.net/column/271)              | [271](https://rsshub.app/geekpark/271) |\n| [底稿对话CEO系列](https://www.geekpark.net/column/308)       | [308](https://rsshub.app/geekpark/308) |\n| [Geek Insight 特稿系列](https://www.geekpark.net/column/306) | [306](https://rsshub.app/geekpark/306) |\n| [心科技](https://www.geekpark.net/column/307)                | [307](https://rsshub.app/geekpark/307) |\n| [行业资讯](https://www.geekpark.net/column/2)                | [2](https://rsshub.app/geekpark/2)     |\n  ",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "features": {
           "requireConfig": false,
@@ -38345,7 +39028,8 @@
       "/hot-article/:type?": {
         "path": "/hot-article/:type?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/gelonghui/hot-article",
@@ -38416,7 +39100,8 @@
       "/live": {
         "path": "/live",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/gelonghui/live",
@@ -39008,7 +39693,8 @@
         ],
         "example": "/github/activity/DIYgod",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "view": 5,
         "parameters": {
@@ -39323,7 +40009,8 @@
       "/issue/:user/:repo/:state?/:labels?": {
         "path": "/issue/:user/:repo/:state?/:labels?",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "view": 5,
         "example": "/github/issue/DIYgod/RSSHub/open",
@@ -39632,7 +40319,8 @@
       "/trending/:since/:language/:spoken_language?": {
         "path": "/trending/:since/:language/:spoken_language?",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "example": "/github/trending/daily/javascript/en",
         "view": 5,
@@ -39878,6 +40566,58 @@
   },
   "go": {
     "routes": {
+      "/jihs/idwr/:year?": {
+        "path": "/jihs/idwr/:year?",
+        "name": "感染症発生動向調査週報",
+        "url": "id-info.jihs.go.jp",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/go/jihs/idwr/2025",
+        "parameters": {
+          "year": {
+            "description": "Year, current year by default"
+          }
+        },
+        "description": ":::tip\nTo subscribe to [感染症発生動向調査週報](https://id-info.jihs.go.jp/surveillance/idwr/jp/idwr/2025/), where the source URL is `https://id-info.jihs.go.jp/surveillance/idwr/jp/idwr/2025/`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/go/jihs/idwr/2025`](https://rsshub.app/go/jihs/idwr/2025).\n:::\n",
+        "categories": [
+          "government"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "id-info.jihs.go.jp/surveillance/idwr/jp/idwr/:year"
+            ]
+          }
+        ],
+        "view": 0,
+        "zh": {
+          "path": "/jihs/idwr/:year?",
+          "name": "传染病发生动向调查周报",
+          "url": "id-info.jihs.go.jp",
+          "maintainers": [
+            "nczitzk"
+          ],
+          "example": "/go/jihs/idwr/2025",
+          "parameters": {
+            "year": {
+              "description": "年份，默认为当前年份，可在对应页 URL 中找到"
+            }
+          },
+          "description": ":::tip\n若订阅 [传染病发生动向调查周报](https://id-info.jihs.go.jp/surveillance/idwr/jp/idwr/2025/)，网址为 `https://id-info.jihs.go.jp/surveillance/idwr/jp/idwr/2025/`，请截取 `https://id-info.jihs.go.jp/surveillance/idwr/jp/idwr/` 到末尾 `/` 的部分 `2025` 作为 `year` 参数填入，此时目标路由为 [`/go/jihs/idwr/2025`](https://rsshub.app/go/jihs/idwr/2025)。\n:::\n"
+        },
+        "location": "jihs/idwr.ts",
+        "module": "() => import('@/routes/go/jihs/idwr.ts')"
+      },
       "/mhlw/pdf/:category{.+}?": {
         "path": "/mhlw/pdf/:category{.+}?",
         "name": "PDF",
@@ -39911,40 +40651,6 @@
         ],
         "location": "mhlw/pdf.ts",
         "module": "() => import('@/routes/go/mhlw/pdf.ts')"
-      },
-      "/niid/idwr-dl/:year?": {
-        "path": "/niid/idwr-dl/:year?",
-        "name": "感染症発生動向調査週報ダウンロード",
-        "url": "www.niid.go.jp",
-        "maintainers": [
-          "nczitzk"
-        ],
-        "example": "/go/niid/idwr-dl/:year?",
-        "parameters": {
-          "year": "Year, current year by default"
-        },
-        "description": "::: tip\n  If you subscribe to [感染症発生動向調査週報ダウンロード2024年](https://www.niid.go.jp/niid/ja/idwr-dl/2024.html)，where the URL is `https://www.niid.go.jp/niid/ja/idwr-dl/2024.html`, extract the part `https://www.niid.go.jp/niid/ja/idwr-dl/` to the end, which is `.html`, and use it as the parameter to fill in. Therefore, the route will be [`/go/niid/idwr-dl/2024`](https://rsshub.app/go/niid/idwr-dl/2024).\n:::",
-        "categories": [
-          "government"
-        ],
-        "features": {
-          "requireConfig": false,
-          "requirePuppeteer": false,
-          "antiCrawler": false,
-          "supportRadar": true,
-          "supportBT": false,
-          "supportPodcast": false,
-          "supportScihub": false
-        },
-        "radar": [
-          {
-            "source": [
-              "www.niid.go.jp/niid/ja/idwr-dl/:year"
-            ]
-          }
-        ],
-        "location": "niid/idwr-dl.ts",
-        "module": "() => import('@/routes/go/niid/idwr-dl.ts')"
       }
     },
     "name": "JapanGov",
@@ -40058,7 +40764,8 @@
       "/:kind?": {
         "path": "/:kind?",
         "categories": [
-          "program-update"
+          "program-update",
+          "popular"
         ],
         "example": "/gofans",
         "parameters": {
@@ -40175,7 +40882,8 @@
       "/citations/:id": {
         "path": "/citations/:id",
         "categories": [
-          "journal"
+          "journal",
+          "popular"
         ],
         "example": "/google/citations/mlmE4JMAAAAJ",
         "parameters": {
@@ -40422,7 +41130,7 @@
         "example": "/google/search/rss/zh-CN,zh",
         "parameters": {
           "keyword": "Keyword",
-          "language": "Accept-Language. Example: zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7"
+          "language": "Accept-Language. Example: `zh-CN,zh;q=0.9,en;q=0.8,ja;q=0.7`"
         },
         "features": {
           "requireConfig": false,
@@ -41017,7 +41725,8 @@
       "/chinatax/latest": {
         "path": "/chinatax/latest",
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "example": "/gov/chinatax/latest",
         "parameters": {},
@@ -41217,7 +41926,8 @@
         },
         "description": "::: tip\n  若订阅 [行政处罚决定](http://www.csrc.gov.cn/csrc/c101971/zfxxgk_zdgk.shtml)，网址为 `http://www.csrc.gov.cn/csrc/c101971/zfxxgk_zdgk.shtml`。截取 `http://www.csrc.gov.cn/csrc/` 到末尾 `/zfxxgk_zdgk.shtml` 的部分 `c101971` 作为参数填入，此时路由为 [`/gov/csrc/zfxxgk_zdgk/c101971`](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101971)。\n:::\n\n#### [主动公开目录](http://www.csrc.gov.cn/csrc/c100035/zfxxgk_zdgk.shtml)\n\n| 频道                                                                    | ID                                                         |\n| ----------------------------------------------------------------------- | ---------------------------------------------------------- |\n| [按主题查看](http://www.csrc.gov.cn/csrc/c101793/zfxxgk_zdgk.shtml)     | [c101793](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101793) |\n| [按体裁文种查看](http://www.csrc.gov.cn/csrc/c101951/zfxxgk_zdgk.shtml) | [c101951](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101951) |\n| [按派出机构查看](http://www.csrc.gov.cn/csrc/c101985/zfxxgk_zdgk.shtml) | [c101985](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101985) |\n\n<details>\n<summary>更多频道</summary>\n\n#### [按主题查看](http://www.csrc.gov.cn/csrc/c101793/zfxxgk_zdgk.shtml)\n\n| 频道                                                                              | ID                                                         |\n| --------------------------------------------------------------------------------- | ---------------------------------------------------------- |\n| [综合政务](http://www.csrc.gov.cn/csrc/c101794/zfxxgk_zdgk.shtml)                 | [c101794](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101794) |\n| [发行监管](http://www.csrc.gov.cn/csrc/c101801/zfxxgk_zdgk.shtml)                 | [c101801](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101801) |\n| [公众公司监管（含北交所）](http://www.csrc.gov.cn/csrc/c101828/zfxxgk_zdgk.shtml) | [c101828](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101828) |\n| [证券交易监管](http://www.csrc.gov.cn/csrc/c101832/zfxxgk_zdgk.shtml)             | [c101832](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101832) |\n| [证券经营机构监管](http://www.csrc.gov.cn/csrc/c101837/zfxxgk_zdgk.shtml)         | [c101837](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101837) |\n| [上市公司监管](http://www.csrc.gov.cn/csrc/c101863/zfxxgk_zdgk.shtml)             | [c101863](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101863) |\n| [基金监管](http://www.csrc.gov.cn/csrc/c101876/zfxxgk_zdgk.shtml)                 | [c101876](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101876) |\n| [私募基金监管](http://www.csrc.gov.cn/csrc/c101938/zfxxgk_zdgk.shtml)             | [c101938](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101938) |\n| [区域性股权市场规范发展](http://www.csrc.gov.cn/csrc/c106301/zfxxgk_zdgk.shtml)   | [c106301](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c106301) |\n| [期货监管](http://www.csrc.gov.cn/csrc/c101901/zfxxgk_zdgk.shtml)                 | [c101901](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101901) |\n| [债券监管](http://www.csrc.gov.cn/csrc/c106306/zfxxgk_zdgk.shtml)                 | [c106306](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c106306) |\n| [行政执法](http://www.csrc.gov.cn/csrc/c101925/zfxxgk_zdgk.shtml)                 | [c101925](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101925) |\n| [行政复议](http://www.csrc.gov.cn/csrc/c105938/zfxxgk_zdgk.shtml)                 | [c105938](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c105938) |\n| [国际合作](http://www.csrc.gov.cn/csrc/c101931/zfxxgk_zdgk.shtml)                 | [c101931](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101931) |\n| [证券服务机构监管](http://www.csrc.gov.cn/csrc/c105939/zfxxgk_zdgk.shtml)         | [c105939](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c105939) |\n| [其他](http://www.csrc.gov.cn/csrc/c101950/zfxxgk_zdgk.shtml)                     | [c101950](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101950) |\n\n#### [按体裁文种查看](http://www.csrc.gov.cn/csrc/c101951/zfxxgk_zdgk.shtml)\n\n| 频道                                                                        | ID                                                         |\n| --------------------------------------------------------------------------- | ---------------------------------------------------------- |\n| [机构职能](http://www.csrc.gov.cn/csrc/c101952/zfxxgk_zdgk.shtml)           | [c101952](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101952) |\n| [证监会令](http://www.csrc.gov.cn/csrc/c101953/zfxxgk_zdgk.shtml)           | [c101953](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101953) |\n| [证监会公告](http://www.csrc.gov.cn/csrc/c101954/zfxxgk_zdgk.shtml)         | [c101954](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101954) |\n| [监管规则适用指引](http://www.csrc.gov.cn/csrc/c105948/zfxxgk_zdgk.shtml)   | [c105948](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c105948) |\n| [行政许可批复](http://www.csrc.gov.cn/csrc/c101955/zfxxgk_zdgk.shtml)       | [c101955](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101955) |\n| [办事指南](http://www.csrc.gov.cn/csrc/c101968/zfxxgk_zdgk.shtml)           | [c101968](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101968) |\n| [监管对象](http://www.csrc.gov.cn/csrc/c101969/zfxxgk_zdgk.shtml)           | [c101969](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101969) |\n| [统计信息](http://www.csrc.gov.cn/csrc/c101970/zfxxgk_zdgk.shtml)           | [c101970](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101970) |\n| [行政处罚决定](http://www.csrc.gov.cn/csrc/c101971/zfxxgk_zdgk.shtml)       | [c101971](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101971) |\n| [市场禁入决定](http://www.csrc.gov.cn/csrc/c101972/zfxxgk_zdgk.shtml)       | [c101972](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101972) |\n| [行政执法当事人承诺](http://www.csrc.gov.cn/csrc/c106416/zfxxgk_zdgk.shtml) | [c106416](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c106416) |\n| [行政复议](http://www.csrc.gov.cn/csrc/c101973/zfxxgk_zdgk.shtml)           | [c101973](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101973) |\n| [监管措施](http://www.csrc.gov.cn/csrc/c105955/zfxxgk_zdgk.shtml)           | [c105955](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c105955) |\n| [预先披露](http://www.csrc.gov.cn/csrc/c101974/zfxxgk_zdgk.shtml)           | [c101974](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101974) |\n| [发审会公告](http://www.csrc.gov.cn/csrc/c101975/zfxxgk_zdgk.shtml)         | [c101975](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101975) |\n| [重组委公告](http://www.csrc.gov.cn/csrc/c101976/zfxxgk_zdgk.shtml)         | [c101976](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101976) |\n| [规划报告](http://www.csrc.gov.cn/csrc/c101977/zfxxgk_zdgk.shtml)           | [c101977](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101977) |\n| [非行政许可事项](http://www.csrc.gov.cn/csrc/c101978/zfxxgk_zdgk.shtml)     | [c101978](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101978) |\n| [其他](http://www.csrc.gov.cn/csrc/c101979/zfxxgk_zdgk.shtml)               | [c101979](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101979) |\n| [备案管理](http://www.csrc.gov.cn/csrc/c106402/zfxxgk_zdgk.shtml)           | [c106402](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c106402) |\n\n#### [按派出机构查看](http://www.csrc.gov.cn/csrc/c101985/zfxxgk_zdgk.shtml)\n\n| 频道                                                                | ID                                                         |\n| ------------------------------------------------------------------- | ---------------------------------------------------------- |\n| [北京](http://www.csrc.gov.cn/csrc/c101986/zfxxgk_zdgk.shtml)       | [c101986](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101986) |\n| [天津](http://www.csrc.gov.cn/csrc/c101987/zfxxgk_zdgk.shtml)       | [c101987](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101987) |\n| [河北](http://www.csrc.gov.cn/csrc/c101988/zfxxgk_zdgk.shtml)       | [c101988](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101988) |\n| [山西](http://www.csrc.gov.cn/csrc/c101989/zfxxgk_zdgk.shtml)       | [c101989](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101989) |\n| [内蒙古](http://www.csrc.gov.cn/csrc/c101990/zfxxgk_zdgk.shtml)     | [c101990](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101990) |\n| [辽宁](http://www.csrc.gov.cn/csrc/c101991/zfxxgk_zdgk.shtml)       | [c101991](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101991) |\n| [吉林](http://www.csrc.gov.cn/csrc/c101992/zfxxgk_zdgk.shtml)       | [c101992](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101992) |\n| [黑龙江](http://www.csrc.gov.cn/csrc/c101993/zfxxgk_zdgk.shtml)     | [c101993](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101993) |\n| [上海](http://www.csrc.gov.cn/csrc/c101994/zfxxgk_zdgk.shtml)       | [c101994](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101994) |\n| [江苏](http://www.csrc.gov.cn/csrc/c101995/zfxxgk_zdgk.shtml)       | [c101995](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101995) |\n| [浙江](http://www.csrc.gov.cn/csrc/c101996/zfxxgk_zdgk.shtml)       | [c101996](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101996) |\n| [安徽](http://www.csrc.gov.cn/csrc/c101997/zfxxgk_zdgk.shtml)       | [c101997](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101997) |\n| [福建](http://www.csrc.gov.cn/csrc/c101998/zfxxgk_zdgk.shtml)       | [c101998](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101998) |\n| [江西](http://www.csrc.gov.cn/csrc/c101999/zfxxgk_zdgk.shtml)       | [c101999](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101999) |\n| [山东](http://www.csrc.gov.cn/csrc/c102000/zfxxgk_zdgk.shtml)       | [c102000](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102000) |\n| [河南](http://www.csrc.gov.cn/csrc/c102001/zfxxgk_zdgk.shtml)       | [c102001](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102001) |\n| [湖北](http://www.csrc.gov.cn/csrc/c102002/zfxxgk_zdgk.shtml)       | [c102002](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102002) |\n| [湖南](http://www.csrc.gov.cn/csrc/c102003/zfxxgk_zdgk.shtml)       | [c102003](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102003) |\n| [广东](http://www.csrc.gov.cn/csrc/c102004/zfxxgk_zdgk.shtml)       | [c102004](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102004) |\n| [广西](http://www.csrc.gov.cn/csrc/c102005/zfxxgk_zdgk.shtml)       | [c102005](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102005) |\n| [海南](http://www.csrc.gov.cn/csrc/c102006/zfxxgk_zdgk.shtml)       | [c102006](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102006) |\n| [重庆](http://www.csrc.gov.cn/csrc/c102007/zfxxgk_zdgk.shtml)       | [c102007](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102007) |\n| [四川](http://www.csrc.gov.cn/csrc/c102008/zfxxgk_zdgk.shtml)       | [c102008](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102008) |\n| [贵州](http://www.csrc.gov.cn/csrc/c102009/zfxxgk_zdgk.shtml)       | [c102009](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102009) |\n| [云南](http://www.csrc.gov.cn/csrc/c102010/zfxxgk_zdgk.shtml)       | [c102010](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102010) |\n| [西藏](http://www.csrc.gov.cn/csrc/c102011/zfxxgk_zdgk.shtml)       | [c102011](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102011) |\n| [陕西](http://www.csrc.gov.cn/csrc/c102012/zfxxgk_zdgk.shtml)       | [c102012](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102012) |\n| [甘肃](http://www.csrc.gov.cn/csrc/c102013/zfxxgk_zdgk.shtml)       | [c102013](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102013) |\n| [青海](http://www.csrc.gov.cn/csrc/c102014/zfxxgk_zdgk.shtml)       | [c102014](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102014) |\n| [宁夏](http://www.csrc.gov.cn/csrc/c102015/zfxxgk_zdgk.shtml)       | [c102015](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102015) |\n| [新疆](http://www.csrc.gov.cn/csrc/c102016/zfxxgk_zdgk.shtml)       | [c102016](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102016) |\n| [深圳](http://www.csrc.gov.cn/csrc/c102017/zfxxgk_zdgk.shtml)       | [c102017](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102017) |\n| [大连](http://www.csrc.gov.cn/csrc/c102018/zfxxgk_zdgk.shtml)       | [c102018](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102018) |\n| [宁波](http://www.csrc.gov.cn/csrc/c102019/zfxxgk_zdgk.shtml)       | [c102019](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102019) |\n| [厦门](http://www.csrc.gov.cn/csrc/c102020/zfxxgk_zdgk.shtml)       | [c102020](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102020) |\n| [青岛](http://www.csrc.gov.cn/csrc/c102021/zfxxgk_zdgk.shtml)       | [c102021](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c102021) |\n| [上海专员办](http://www.csrc.gov.cn/csrc/c105841/zfxxgk_zdgk.shtml) | [c105841](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c105841) |\n| [深圳专员办](http://www.csrc.gov.cn/csrc/c105842/zfxxgk_zdgk.shtml) | [c105842](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c105842) |\n\n#### [综合政务](http://www.csrc.gov.cn/csrc/c101794/zfxxgk_zdgk.shtml)\n\n| 频道                                                                                    | ID                                                         |\n| --------------------------------------------------------------------------------------- | ---------------------------------------------------------- |\n| [组织机构](http://www.csrc.gov.cn/csrc/c101795/zfxxgk_zdgk.shtml)                       | [c101795](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101795) |\n| [征求意见](http://www.csrc.gov.cn/csrc/c101796/zfxxgk_zdgk.shtml)                       | [c101796](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101796) |\n| [废止规章](http://www.csrc.gov.cn/csrc/c101797/zfxxgk_zdgk.shtml)                       | [c101797](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101797) |\n| [财务预算管理](http://www.csrc.gov.cn/csrc/c105887/zfxxgk_zdgk.shtml)                   | [c105887](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c105887) |\n| [其他](http://www.csrc.gov.cn/csrc/c101799/zfxxgk_zdgk.shtml)                           | [c101799](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101799) |\n| [全国人大建议和政协提案复文公开](http://www.csrc.gov.cn/csrc/c101800/zfxxgk_zdgk.shtml) | [c101800](https://rsshub.app/gov/csrc/zfxxgk_zdgk/c101800) |\n\n</details>\n    ",
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "features": {
           "requireConfig": false,
@@ -41693,7 +42403,7 @@
         ],
         "example": "/gov/customs/list/paimai",
         "parameters": {
-          "gchannel": "支持 `paimai` 及 `fagui` 2个频道，默认为 `paimai`"
+          "gchannel": "支持 `paimai`, `fagui` 及 `latest` 3 个频道，默认为 `paimai`"
         },
         "features": {
           "requireConfig": false,
@@ -41711,7 +42421,7 @@
             "target": "/customs/list"
           }
         ],
-        "name": "拍卖信息 / 海关法规",
+        "name": "拍卖信息 / 海关法规 / 最新文件",
         "maintainers": [
           "Jeason0228",
           "TonyRL",
@@ -43638,7 +44348,8 @@
           "nczitzk"
         ],
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "radar": [
           {
@@ -43664,7 +44375,8 @@
         ],
         "example": "/gov/ndrc/zfxxgk",
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "features": {
           "requireConfig": false,
@@ -43689,7 +44401,8 @@
       "/nea/sjzz/ghs": {
         "path": "/nea/sjzz/ghs",
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "example": "/gov/nea/sjzz/ghs",
         "parameters": {},
@@ -43742,7 +44455,8 @@
       "/npc/:caty": {
         "path": "/npc/:caty",
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "example": "/gov/npc/c183",
         "parameters": {
@@ -45011,7 +45725,8 @@
       "/zhengce/zhengceku/:department": {
         "path": "/zhengce/zhengceku/:department",
         "categories": [
-          "government"
+          "government",
+          "popular"
         ],
         "example": "/gov/zhengce/zhengceku/bmwj",
         "parameters": {
@@ -52663,7 +53378,8 @@
       "/chart/:chart?": {
         "path": "/chart/:chart?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 5,
         "parameters": {
@@ -53040,7 +53756,8 @@
       "/recommend": {
         "path": "/recommend",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/infoq/recommend",
         "parameters": {},
@@ -53212,7 +53929,8 @@
           "id": "南方周末频道 id, 可在该频道的 URL 中找到（即 https://www.infzm.com/contents?term_id=:id)"
         },
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "example": "/infzm/1",
         "radar": [
@@ -54325,7 +55043,8 @@
       "/ranking/:type": {
         "path": "/ranking/:type",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/ithome/ranking/24h",
         "parameters": {
@@ -54768,7 +55487,8 @@
           "Felix2yu"
         ],
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 3,
         "url": "www.javbus.com",
@@ -54793,7 +55513,8 @@
       "/actors/:id/:filter?": {
         "path": "/actors/:id/:filter?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/javdb/actors/R2Vg",
         "parameters": {
@@ -54917,7 +55638,8 @@
       "/rankings/:category?/:time?": {
         "path": "/rankings/:category?/:time?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/javdb/rankings",
         "parameters": {
@@ -55082,7 +55804,8 @@
       "/video_codes/:code/:filter?": {
         "path": "/video_codes/:code/:filter?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/javdb/video_codes/SIVR",
         "parameters": {
@@ -55376,7 +56099,8 @@
           "id": "Actress name"
         },
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "radar": [
           {
@@ -55601,7 +56325,8 @@
       "/home": {
         "path": "/home",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 0,
         "example": "/jianshu/home",
@@ -55811,7 +56536,8 @@
       "/topic/:id/:showUid?": {
         "path": "/topic/:id/:showUid?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/jike/topic/556688fae4b00c57d9dd46ee",
@@ -55854,7 +56580,8 @@
       "/user/:id": {
         "path": "/user/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/jike/user/3EE02BC9-C5B3-4209-8750-4ED1EE0F67BB",
@@ -56020,7 +56747,8 @@
       "/:important?": {
         "path": "/:important?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 5,
         "example": "/jin10",
@@ -56181,7 +56909,8 @@
       "/lives/:category?": {
         "path": "/lives/:category?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 5,
         "example": "/jinse/lives",
@@ -57246,7 +57975,8 @@
       "/tab/:tab?": {
         "path": "/tab/:tab?",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "example": "/jpxgmn/tab",
         "parameters": {
@@ -57270,7 +58000,8 @@
       "/weekly": {
         "path": "/weekly",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "example": "/jpxgmn/weekly",
         "radar": [
@@ -57580,7 +58311,8 @@
       "/category/:category": {
         "path": "/category/:category",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "example": "/juejin/category/frontend",
         "parameters": {
@@ -57707,7 +58439,8 @@
       "/dynamic/:id": {
         "path": "/dynamic/:id",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "example": "/juejin/dynamic/3051900006845944",
         "parameters": {
@@ -57764,7 +58497,8 @@
       "/posts/:id": {
         "path": "/posts/:id",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "example": "/juejin/posts/3051900006845944",
         "parameters": {
@@ -57827,7 +58561,8 @@
       "/trending/:category/:type": {
         "path": "/trending/:category/:type",
         "categories": [
-          "programming"
+          "programming",
+          "popular"
         ],
         "example": "/juejin/trending/ios/monthly",
         "parameters": {
@@ -58680,9 +59415,13 @@
   "konachan": {
     "routes": {
       "/post/popular_recent/:period?": {
-        "path": "/post/popular_recent/:period?",
+        "path": [
+          "/post/popular_recent/:period?",
+          "/sfw/post/popular_recent/:period?"
+        ],
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "view": 2,
         "example": "/konachan/post/popular_recent/1d",
@@ -58708,19 +59447,82 @@
               }
             ],
             "default": "1d"
+          },
+          "safe_search": {
+            "description": "是否使用无r18的站点konachan.net，若是,则在路径前加上 `/sfw`，如`/konachan/sfw/post/popular_recent/1d`，若否则默认使用 konachan.com",
+            "default": "false"
           }
         },
         "radar": [
           {
             "source": [
-              "konachan.com/post"
+              "konachan.com/post",
+              "konachan.net/post"
             ]
           }
         ],
         "name": "Popular Recent Posts",
         "maintainers": [
           "magic-akari",
-          "NekoAria"
+          "NekoAria",
+          "sineeeee"
+        ],
+        "description": "| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n| ------- | -------- | ------- | -------- |\n| 1d | 1w | 1m | 1y |",
+        "location": "post.ts",
+        "module": "() => import('@/routes/konachan/post.ts')"
+      },
+      "/sfw/post/popular_recent/:period?": {
+        "path": [
+          "/post/popular_recent/:period?",
+          "/sfw/post/popular_recent/:period?"
+        ],
+        "categories": [
+          "picture",
+          "popular"
+        ],
+        "view": 2,
+        "example": "/konachan/post/popular_recent/1d",
+        "parameters": {
+          "period": {
+            "description": "展示时间",
+            "options": [
+              {
+                "value": "1d",
+                "label": "最近 24 小时"
+              },
+              {
+                "value": "1w",
+                "label": "最近一周"
+              },
+              {
+                "value": "1m",
+                "label": "最近一月"
+              },
+              {
+                "value": "1y",
+                "label": "最近一年"
+              }
+            ],
+            "default": "1d"
+          },
+          "safe_search": {
+            "description": "是否使用无r18的站点konachan.net，若是,则在路径前加上 `/sfw`，如`/konachan/sfw/post/popular_recent/1d`，若否则默认使用 konachan.com",
+            "default": "false"
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "konachan.com/post",
+              "konachan.net/post"
+            ]
+          }
+        ],
+        "name": "Popular Recent Posts",
+        "maintainers": [
+          "magic-akari",
+          "NekoAria",
+          "sineeeee"
         ],
         "description": "| 最近 24 小时    | 最近一周     | 最近一月    | 最近一年     |\n| ------- | -------- | ------- | -------- |\n| 1d | 1w | 1m | 1y |",
         "location": "post.ts",
@@ -62620,29 +63422,233 @@
   },
   "mangadex": {
     "routes": {
-      "/:id/:lang?": {
-        "path": "/:id/:lang?",
+      "/manga/:id/:lang?": {
+        "path": "/manga/:id/:lang?",
         "radar": [
           {
             "source": [
-              "mangadex.org/title/:id/*",
+              "mangadex.org/title/:id/:suffix",
               "mangadex.org/title/:id"
             ],
-            "target": "/:id"
+            "target": "/manga/:id"
           }
         ],
-        "name": "Unknown",
+        "name": "Single Manga Feed",
         "maintainers": [
-          "vzz64"
+          "vzz64",
+          "chrisis58"
         ],
+        "example": "/mangadex/manga/f98660a1-d2e2-461c-960d-7bd13df8b76d/en",
         "location": "index.ts",
         "module": "() => import('@/routes/mangadex/index.ts')"
+      },
+      "/mdlist/:id/:lang?": {
+        "name": "MDList Feed",
+        "path": "/mdlist/:id/:lang?",
+        "radar": [
+          {
+            "source": [
+              "mangadex.org/list/:id/:suffix"
+            ],
+            "target": "/mdlist/:id"
+          }
+        ],
+        "description": "Sepcific MangaDex MDList Feed",
+        "example": "/mangadex/mdlist/10cca803-8dc9-4f0e-86a8-6659a3ce5188?limit=10&private=true",
+        "maintainers": [
+          "chrisis58"
+        ],
+        "categories": [
+          "anime"
+        ],
+        "parameters": {
+          "id": {
+            "description": "The list id of the manga list"
+          },
+          "private": {
+            "description": "(Query Param) Needed to access private lists, any value will be treated as true"
+          }
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "MANGADEX_USERNAME",
+              "description": "MangaDex Username, required when refresh-token is not set and the list is private",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_PASSWORD",
+              "description": "MangaDex Password, required when refresh-token is not set and the list is private",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_CLIENT_ID",
+              "description": "MangaDex Client ID, required when the list is private",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_CLIENT_SECRET",
+              "description": "MangaDex Client Secret, required when the list is private",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_REFRESH_TOKEN",
+              "description": "MangaDex Refresh Token, required when username and password are not set and the list is private",
+              "optional": true
+            }
+          ]
+        },
+        "location": "mdlist/feed.ts",
+        "module": "() => import('@/routes/mangadex/mdlist/feed.ts')"
+      },
+      "/user/feed/follow/:lang?": {
+        "path": "/user/feed/follow/:lang?",
+        "name": " Follows Feed",
+        "maintainers": [
+          "chrisis58"
+        ],
+        "description": "Get the latest updates of all the manga you follow on MangaDex.",
+        "example": "/mangadex/user/feed/follow/zh?limit=10",
+        "radar": [
+          {
+            "source": [
+              "mangadex.org/titles/feed"
+            ],
+            "target": "/user/feed/follow"
+          }
+        ],
+        "categories": [
+          "anime"
+        ],
+        "parameters": {
+          "lang": {
+            "description": "The language of the followed manga"
+          }
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "MANGADEX_USERNAME",
+              "description": "MangaDex Username, required when refresh-token is not set",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_PASSWORD",
+              "description": "MangaDex Password, required when refresh-token is not set",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_CLIENT_ID",
+              "description": "MangaDex Client ID",
+              "optional": false
+            },
+            {
+              "name": "MANGADEX_CLIENT_SECRET",
+              "description": "MangaDex Client Secret",
+              "optional": false
+            },
+            {
+              "name": "MANGADEX_REFRESH_TOKEN",
+              "description": "MangaDex Refresh Token, required when username and password are not set",
+              "optional": true
+            }
+          ]
+        },
+        "location": "user/feed.ts",
+        "module": "() => import('@/routes/mangadex/user/feed.ts')"
+      },
+      "/user/follow/:type?": {
+        "path": "/user/follow/:type?",
+        "name": "Logged User's Followed Mangas Feed",
+        "maintainers": [
+          "chrisis58"
+        ],
+        "example": "/mangadex/user/follow/reading",
+        "description": "Fetches the feed of mangas that you follow on MangaDex whick are in the specified status.\nCAUTION: With big amount of follows, it may take a long time to load or even fail.\nIt's recommended to use the `/mangadex/mdlist/:listId?` route instead for better performance, though it requires manual configuration.",
+        "categories": [
+          "anime"
+        ],
+        "parameters": {
+          "type": {
+            "description": "The type of follows to fetch",
+            "default": "reading",
+            "options": [
+              {
+                "value": "reading",
+                "label": "Reading"
+              },
+              {
+                "value": "plan-to-read",
+                "label": "Plan to Read"
+              },
+              {
+                "value": "completed",
+                "label": "Completed"
+              },
+              {
+                "value": "on-hold",
+                "label": "On Hold"
+              },
+              {
+                "value": "re-reading",
+                "label": "Re-reading"
+              },
+              {
+                "value": "dropped",
+                "label": "Dropped"
+              }
+            ]
+          }
+        },
+        "radar": [
+          {
+            "source": [
+              "mangadex.org/titles/follows"
+            ],
+            "target": "/user/follow/reading"
+          }
+        ],
+        "features": {
+          "requireConfig": [
+            {
+              "name": "MANGADEX_USERNAME",
+              "description": "MangaDex Username, required when refresh-token is not set",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_PASSWORD",
+              "description": "MangaDex Password, required when refresh-token is not set",
+              "optional": true
+            },
+            {
+              "name": "MANGADEX_CLIENT_ID",
+              "description": "MangaDex Client ID",
+              "optional": false
+            },
+            {
+              "name": "MANGADEX_CLIENT_SECRET",
+              "description": "MangaDex Client Secret",
+              "optional": false
+            },
+            {
+              "name": "MANGADEX_REFRESH_TOKEN",
+              "description": "MangaDex Refresh Token, required when username and password are not set",
+              "optional": true
+            }
+          ]
+        },
+        "location": "user/follows.ts",
+        "module": "() => import('@/routes/mangadex/user/follows.ts')"
       }
     },
     "name": "MangaDex",
     "apiRoutes": {},
     "url": "mangadex.org",
-    "lang": "en"
+    "lang": "en",
+    "categories": [
+      "anime"
+    ],
+    "description": "MangaDex is an non-profit and ad-free manga reader offering high-quality images."
   },
   "manhuagui": {
     "routes": {
@@ -63076,7 +64082,8 @@
       "/cn/:category?": {
         "path": "/cn/:category?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/mckinsey/cn",
@@ -65829,6 +66836,35 @@
       "name": "美露可利"
     }
   },
+  "meta": {
+    "routes": {
+      "/ai/blog": {
+        "path": "/ai/blog",
+        "categories": [
+          "programming"
+        ],
+        "example": "/meta/ai/blog",
+        "name": "AI Blog",
+        "maintainers": [
+          "TonyRL"
+        ],
+        "url": "ai.meta.com/blog/",
+        "radar": [
+          {
+            "source": [
+              "ai.meta.com/blog/",
+              "ai.meta.com"
+            ]
+          }
+        ],
+        "location": "ai-blog.ts",
+        "module": "() => import('@/routes/meta/ai-blog.ts')"
+      }
+    },
+    "name": "Meta",
+    "apiRoutes": {},
+    "url": "www.meta.com"
+  },
   "metacritic": {
     "routes": {
       "/:type?/:sort?/:filter?": {
@@ -68265,7 +69301,8 @@
       "/apod": {
         "path": "/apod",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "view": 2,
         "example": "/nasa/apod",
@@ -68305,7 +69342,8 @@
       "/dailyphoto": {
         "path": "/dailyphoto",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "view": 2,
         "example": "/natgeo/dailyphoto",
@@ -69952,7 +70990,8 @@
       "/:category": {
         "path": "/:category",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/newyorker/latest",
@@ -70105,7 +71144,8 @@
       "/forum/:fid/:recommend?": {
         "path": "/forum/:fid/:recommend?",
         "categories": [
-          "bbs"
+          "bbs",
+          "popular"
         ],
         "view": 0,
         "example": "/nga/forum/489",
@@ -70303,7 +71343,8 @@
       "/news/:lang?": {
         "path": "/news/:lang?",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/nhk/news/en",
@@ -73742,7 +74783,8 @@
       "/:lang?": {
         "path": "/:lang?",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/nytimes/dual",
@@ -78034,7 +79076,8 @@
       "/user/:id/:type?": {
         "path": "/user/:id/:type?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/picnob/user/xlisa_olivex",
         "parameters": {
@@ -78084,7 +79127,8 @@
       "/profile/:id/:type?/:functionalFlag?": {
         "path": "/profile/:id/:type?/:functionalFlag?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/picuki/profile/linustech",
         "parameters": {
@@ -78658,7 +79702,8 @@
       "/ranking/:mode/:date?": {
         "path": "/ranking/:mode/:date?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 2,
         "example": "/pixiv/ranking/week",
@@ -78745,7 +79790,8 @@
       "/search/:keyword/:order?/:mode?/:include_ai?": {
         "path": "/search/:keyword/:order?/:mode?/:include_ai?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 2,
         "example": "/pixiv/search/Nezuko/popular",
@@ -78816,7 +79862,8 @@
       "/user/:id": {
         "path": "/user/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 2,
         "example": "/pixiv/user/15288095",
@@ -79730,7 +80777,8 @@
       "/category/:caty": {
         "path": "/category/:caty",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 3,
         "example": "/pornhub/category/popular-with-women",
@@ -79755,7 +80803,8 @@
       "/model/:username/:language?/:sort?": {
         "path": "/model/:username/:language?/:sort?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 3,
         "example": "/pornhub/model/stacy-starando",
@@ -79791,7 +80840,8 @@
       "/pornstar/:username/:language?/:sort?": {
         "path": "/pornstar/:username/:language?/:sort?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 3,
         "example": "/pornhub/pornstar/june-liu/www/mr",
@@ -79902,7 +80952,8 @@
       "/search/:keyword": {
         "path": "/search/:keyword",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 3,
         "example": "/pornhub/search/stepsister",
@@ -83111,7 +84162,8 @@
       "/daily": {
         "path": "/daily",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/readhub/daily",
         "parameters": {},
@@ -83345,7 +84397,8 @@
       "/:category/:topic?": {
         "path": "/:category/:topic?",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/reuters/world/us",
@@ -83785,7 +84838,8 @@
       "/routes/:lang?": {
         "path": "/routes/:lang?",
         "categories": [
-          "program-update"
+          "program-update",
+          "popular"
         ],
         "view": 5,
         "example": "/rsshub/routes/en",
@@ -83824,7 +84878,8 @@
       "/transform/html/:url/:routeParams": {
         "path": "/transform/html/:url/:routeParams",
         "categories": [
-          "other"
+          "other",
+          "popular"
         ],
         "example": "/rsshub/transform/html/https%3A%2F%2Fwechat2rss.xlab.app%2Fposts%2Flist%2F/item=div%5Bclass%3D%27post%2Dcontent%27%5D%20p%20a",
         "parameters": {
@@ -84782,7 +85837,8 @@
       "/blog/:type?/:time?/:sort?": {
         "path": "/blog/:type?/:time?/:sort?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/sciencenet/blog",
         "parameters": {
@@ -88447,7 +89503,8 @@
       "/forum/:id?": {
         "path": "/forum/:id?",
         "categories": [
-          "bbs"
+          "bbs",
+          "popular"
         ],
         "example": "/sis001/forum/322",
         "parameters": {
@@ -89358,7 +90415,8 @@
       "/haowen/:day?": {
         "path": "/haowen/:day?",
         "categories": [
-          "shopping"
+          "shopping",
+          "popular"
         ],
         "example": "/smzdm/haowen/1",
         "parameters": {
@@ -89405,7 +90463,8 @@
       "/keyword/:keyword": {
         "path": "/keyword/:keyword",
         "categories": [
-          "shopping"
+          "shopping",
+          "popular"
         ],
         "view": 5,
         "example": "/smzdm/keyword/女装",
@@ -89473,7 +90532,8 @@
       "/ranking/:rank_type/:rank_id/:hour": {
         "path": "/ranking/:rank_type/:rank_id/:hour",
         "categories": [
-          "shopping"
+          "shopping",
+          "popular"
         ],
         "view": 5,
         "example": "/smzdm/ranking/pinlei/11/3",
@@ -89947,7 +91007,8 @@
       "/:type?": {
         "path": "/:type?",
         "categories": [
-          "traditional-media"
+          "traditional-media",
+          "popular"
         ],
         "view": 0,
         "example": "/solidot/linux",
@@ -90569,7 +91630,8 @@
       "/show/:id": {
         "path": "/show/:id",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 4,
         "example": "/spotify/show/5CfCWKI5pZ28U0uOzXkDHe",
@@ -91400,7 +92462,8 @@
       "/index": {
         "path": "/index",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "view": 0,
         "example": "/sspai/index",
@@ -91431,7 +92494,8 @@
       "/matrix": {
         "path": "/matrix",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/sspai/matrix",
         "parameters": {},
@@ -97230,7 +98294,8 @@
       "/:id/:type?/:search?": {
         "path": "/:id/:type?/:search?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "example": "/t66y/20/2",
         "parameters": {
@@ -98041,7 +99106,8 @@
       "/channel/:username/:routeParams?": {
         "path": "/channel/:username/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/telegram/channel/awesomeRSSHub",
@@ -98653,7 +99719,8 @@
       "/:channel?/:original?": {
         "path": "/:channel?/:original?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/theblockbeats/newsflash",
@@ -98833,7 +99900,8 @@
       "/app/:category?": {
         "path": "/app/:category?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/theinitium/app",
         "parameters": {
@@ -99210,7 +100278,8 @@
       "/featured": {
         "path": "/featured",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/thepaper/featured",
         "parameters": {},
@@ -99694,7 +100763,8 @@
       "/news/:type?": {
         "path": "/news/:type?",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/timednews/news",
         "parameters": {
@@ -101830,7 +102900,8 @@
       "/keyword/:keyword/:routeParams?": {
         "path": "/keyword/:keyword/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/twitter/keyword/RSSHub",
@@ -101913,7 +102984,8 @@
       "/list/:id/:routeParams?": {
         "path": "/list/:id/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/twitter/list/1502570462752219136",
         "parameters": {
@@ -101957,7 +103029,8 @@
       "/media/:id/:routeParams?": {
         "path": "/media/:id/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 2,
         "example": "/twitter/media/_RSSHub",
@@ -102066,7 +103139,8 @@
       "/user/:id/:routeParams?": {
         "path": "/user/:id/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/twitter/user/_RSSHub",
@@ -102128,7 +103202,7 @@
     "name": "X (Twitter)",
     "apiRoutes": {},
     "url": "x.com",
-    "description": "Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets\n\n| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |\n| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |\n| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showAuthorAsTitleOnly`        | Show only author name as title                                                                                                            | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showEmojiForRetweetAndReply`  | Use \"🔁\" instead of \"RT\", \"↩️\" & \"💬\" instead of \"Re\"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showSymbolForRetweetAndReply` | Use \" RT \" instead of \"\", \" Re \" instead of \"\"                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |\n| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |\n| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |\n| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |\n| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |\n| `includeReplies`               | Include replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |\n| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |\n| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |\n| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |\n| `onlyMedia`                    | Only get tweets with a media                                                                                                             | `0`/`1`/`true`/`false` | `false`                 |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150\n```\n\ngenerates\n\n<img loading=\"lazy\" src=\"/img/readable-twitter.png\" alt=\"Readable Twitter RSS of Durov\" />\n\nCurrently supports two authentication methods:\n\n- Using `TWITTER_AUTH_TOKEN` (recommended): Configure a comma-separated list of `auth_token` cookies of logged-in Twitter Web. RSSHub will use this information to directly access Twitter's web API to obtain data.\n\n- Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure a comma-separated list of Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.\n",
+    "description": "Specify options (in the format of query string) in parameter `routeParams` to control some extra features for Tweets\n\n| Key                            | Description                                                                                                                          | Accepts                | Defaults to                               |\n| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------- | ----------------------------------------- |\n| `readable`                     | Enable readable layout                                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `authorNameBold`               | Display author name in bold                                                                                                          | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInTitle`            | Show author name in title                                                                                                            | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showAuthorAsTitleOnly`        | Show only author name as title                                                                                                            | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorInDesc`             | Show author name in description (RSS body)                                                                                           | `0`/`1`/`true`/`false` | `false` (`true` in `/twitter/followings`) |\n| `showQuotedAuthorAvatarInDesc` | Show avatar of quoted Tweet's author in description (RSS body) (Not recommended if your RSS reader extracts images from description) | `0`/`1`/`true`/`false` | `false`                                   |\n| `showAuthorAvatarInDesc`       | Show avatar of author in description (RSS body) (Not recommended if your RSS reader extracts images from description)                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showEmojiForRetweetAndReply`  | Use \"🔁\" instead of \"RT\", \"↩️\" & \"💬\" instead of \"Re\"                                                                                | `0`/`1`/`true`/`false` | `false`                                   |\n| `showSymbolForRetweetAndReply` | Use \" RT \" instead of \"\", \" Re \" instead of \"\"                                                                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `showRetweetTextInTitle`       | Show quote comments in title (if `false`, only the retweeted tweet will be shown in the title)                                       | `0`/`1`/`true`/`false` | `true`                                    |\n| `addLinkForPics`               | Add clickable links for Tweet pictures                                                                                               | `0`/`1`/`true`/`false` | `false`                                   |\n| `showTimestampInDescription`   | Show timestamp in description                                                                                                        | `0`/`1`/`true`/`false` | `false`                                   |\n| `showQuotedInTitle`            | Show quoted tweet in title                                                                                                           | `0`/`1`/`true`/`false` | `false`                                   |\n| `widthOfPics`                  | Width of Tweet pictures                                                                                                              | Unspecified/Integer    | Unspecified                               |\n| `heightOfPics`                 | Height of Tweet pictures                                                                                                             | Unspecified/Integer    | Unspecified                               |\n| `sizeOfAuthorAvatar`           | Size of author's avatar                                                                                                              | Integer                | `48`                                      |\n| `sizeOfQuotedAuthorAvatar`     | Size of quoted tweet's author's avatar                                                                                               | Integer                | `24`                                      |\n| `includeReplies`               | Include replies, only available in `/twitter/user`                                                                                   | `0`/`1`/`true`/`false` | `false`                                   |\n| `includeRts`                   | Include retweets, only available in `/twitter/user`                                                                                  | `0`/`1`/`true`/`false` | `true`                                    |\n| `forceWebApi`                  | Force using Web API even if Developer API is configured, only available in `/twitter/user` and `/twitter/keyword`                    | `0`/`1`/`true`/`false` | `false`                                   |\n| `count`                        | `count` parameter passed to Twitter API, only available in `/twitter/user`                                                           | Unspecified/Integer    | Unspecified                               |\n| `onlyMedia`                    | Only get tweets with a media                                                                                                             | `0`/`1`/`true`/`false` | `false`                 |\n| `mediaNumber `                 | Number the medias                                                                                                            | `0`/`1`/`true`/`false` | `false`                 |\n\nSpecify different option values than default values to improve readability. The URL\n\n```\nhttps://rsshub.app/twitter/user/durov/readable=1&authorNameBold=1&showAuthorInTitle=1&showAuthorInDesc=1&showQuotedAuthorAvatarInDesc=1&showAuthorAvatarInDesc=1&showEmojiForRetweetAndReply=1&showRetweetTextInTitle=0&addLinkForPics=1&showTimestampInDescription=1&showQuotedInTitle=1&heightOfPics=150\n```\n\ngenerates\n\n<img loading=\"lazy\" src=\"/img/readable-twitter.png\" alt=\"Readable Twitter RSS of Durov\" />\n\nCurrently supports two authentication methods:\n\n- Using `TWITTER_AUTH_TOKEN` (recommended): Configure a comma-separated list of `auth_token` cookies of logged-in Twitter Web. RSSHub will use this information to directly access Twitter's web API to obtain data.\n\n- Using `TWITTER_USERNAME` `TWITTER_PASSWORD` and `TWITTER_AUTHENTICATION_SECRET`: Configure a comma-separated list of Twitter username and password. RSSHub will use this information to log in to Twitter and obtain data using the mobile API. Please note that if you have not logged in with the current IP address before, it is easy to trigger Twitter's risk control mechanism.\n",
     "lang": "en"
   },
   "twreporter": {
@@ -104351,7 +105425,8 @@
       "/tab/:tabid": {
         "path": "/tab/:tabid",
         "categories": [
-          "bbs"
+          "bbs",
+          "popular"
         ],
         "view": 0,
         "example": "/v2ex/tab/hot",
@@ -104376,7 +105451,8 @@
       "/topics/:type": {
         "path": "/topics/:type",
         "categories": [
-          "bbs"
+          "bbs",
+          "popular"
         ],
         "view": 0,
         "example": "/v2ex/topics/latest",
@@ -106529,7 +107605,8 @@
       "/mp/msgalbum/:biz/:aid": {
         "path": "/mp/msgalbum/:biz/:aid",
         "categories": [
-          "new-media"
+          "new-media",
+          "popular"
         ],
         "example": "/wechat/mp/msgalbum/MzA3MDM3NjE5NQ==/1375870284640911361",
         "parameters": {
@@ -106764,7 +107841,8 @@
       "/keyword/:keyword/:routeParams?": {
         "path": "/keyword/:keyword/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/weibo/keyword/RSSHub",
@@ -106906,7 +107984,8 @@
       "/user/:uid/:routeParams?": {
         "path": "/user/:uid/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 1,
         "example": "/weibo/user/1195230310",
@@ -108625,7 +109704,8 @@
       "/:label?": {
         "path": "/:label?",
         "categories": [
-          "reading"
+          "reading",
+          "popular"
         ],
         "example": "/xbookcn/精选作品",
         "parameters": {
@@ -108863,7 +109943,8 @@
         "path": "/user/:user_id/:category/:routeParams?",
         "name": "用户笔记/收藏",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 0,
         "maintainers": [
@@ -108938,7 +110019,8 @@
       "/crowdfunding": {
         "path": "/crowdfunding",
         "categories": [
-          "shopping"
+          "shopping",
+          "popular"
         ],
         "example": "/xiaomiyoupin/crowdfunding",
         "parameters": {},
@@ -109065,7 +110147,8 @@
       "/podcast/:id": {
         "path": "/podcast/:id",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 4,
         "example": "/xiaoyuzhou/podcast/6021f949a789fca4eff4492c",
@@ -109898,7 +110981,8 @@
       "/forum/:fid": {
         "path": "/forum/:fid",
         "categories": [
-          "bbs"
+          "bbs",
+          "popular"
         ],
         "example": "/xsijishe/forum/51",
         "parameters": {
@@ -109932,7 +111016,8 @@
       "/rank/:type": {
         "path": "/rank/:type",
         "categories": [
-          "bbs"
+          "bbs",
+          "popular"
         ],
         "example": "/xsijishe/rank/weekly",
         "parameters": {
@@ -110297,7 +111382,8 @@
       "/user/:id/:type?": {
         "path": "/user/:id/:type?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "example": "/xueqiu/user/8152922548",
         "parameters": {
@@ -110705,7 +111791,8 @@
       "/post/popular_recent/:period?": {
         "path": "/post/popular_recent/:period?",
         "categories": [
-          "picture"
+          "picture",
+          "popular"
         ],
         "view": 2,
         "example": "/yande/post/popular_recent/1d",
@@ -111617,7 +112704,8 @@
       "/channel/:id/:routeParams?": {
         "path": "/channel/:id/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/youtube/channel/UCDwDMPOZfxVV0x_dz0eQ8KQ",
         "parameters": {
@@ -111761,7 +112849,8 @@
       "/playlist/:id/:embed?": {
         "path": "/playlist/:id/:embed?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 3,
         "example": "/youtube/playlist/PLqQ1RwlxOgeLTJ1f3fNMSwhjVgaWKo_9Z",
@@ -111839,7 +112928,8 @@
       "/user/:username/:routeParams?": {
         "path": "/user/:username/:routeParams?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 3,
         "example": "/youtube/user/@JFlaMusic",
@@ -111891,7 +112981,8 @@
       "/materials/:id?": {
         "path": "/materials/:id?",
         "categories": [
-          "finance"
+          "finance",
+          "popular"
         ],
         "view": 0,
         "example": "/youzhiyouxing/materials",
@@ -112297,7 +113388,8 @@
       "/article/:type?": {
         "path": "/article/:type?",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 0,
         "example": "/yyets/article",
@@ -112356,7 +113448,8 @@
       "/today": {
         "path": "/today",
         "categories": [
-          "multimedia"
+          "multimedia",
+          "popular"
         ],
         "view": 5,
         "example": "/yyets/today",
@@ -112824,7 +113917,8 @@
       "/top/:type": {
         "path": "/top/:type",
         "categories": [
-          "design"
+          "design",
+          "popular"
         ],
         "view": 2,
         "example": "/zcool/top/design",
@@ -112861,7 +113955,8 @@
       "/user/:uid": {
         "path": "/user/:uid",
         "categories": [
-          "design"
+          "design",
+          "popular"
         ],
         "view": 2,
         "example": "/zcool/user/baiyong",
@@ -113050,7 +114145,8 @@
       "/people/activities/:id": {
         "path": "/people/activities/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "view": 0,
         "example": "/zhihu/people/activities/diygod",
@@ -113255,7 +114351,8 @@
       "/hot/:category?": {
         "path": "/hot/:category?",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/zhihu/hot",
         "view": 0,
@@ -113285,7 +114382,8 @@
       "/posts/:usertype/:id": {
         "path": "/posts/:usertype/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/zhihu/posts/people/frederchen",
         "parameters": {
@@ -113447,7 +114545,8 @@
       "/zhuanlan/:id": {
         "path": "/zhuanlan/:id",
         "categories": [
-          "social-media"
+          "social-media",
+          "popular"
         ],
         "example": "/zhihu/zhuanlan/googledevelopers",
         "parameters": {
@@ -114006,7 +115105,8 @@
       "/posts/:id": {
         "path": "/posts/:id",
         "categories": [
-          "blog"
+          "blog",
+          "popular"
         ],
         "example": "/zhubai/posts/via",
         "parameters": {
