@@ -11597,6 +11597,50 @@
     "description": "News from the official site of men's professional tennis.",
     "lang": "en"
   },
+  "augmentcode": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "augmentcode.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/augmentcode/blog",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "augmentcode.com/blog"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "module": "() => import('@/routes/augmentcode/blog.ts')"
+      }
+    },
+    "name": "Augment Code",
+    "apiRoutes": {},
+    "url": "augmentcode.com",
+    "categories": [
+      "programming"
+    ],
+    "description": "",
+    "lang": "en"
+  },
   "auto-stats": {
     "routes": {
       "/:category?": {
@@ -17154,7 +17198,8 @@
         },
         "name": "Keywords",
         "maintainers": [
-          "untitaker"
+          "untitaker",
+          "DIYgod"
         ],
         "location": "keyword.ts",
         "module": "() => import('@/routes/bsky/keyword.ts')"
@@ -52665,6 +52710,43 @@
     "url": "huxiu.com",
     "lang": "zh-CN"
   },
+  "hyperdash": {
+    "routes": {
+      "/top-traders": {
+        "path": "/top-traders",
+        "categories": [
+          "finance"
+        ],
+        "example": "/hyperdash/top-traders",
+        "parameters": {},
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "hyperdash.info/"
+            ]
+          }
+        ],
+        "name": "Top Traders",
+        "maintainers": [
+          "pseudoyu"
+        ],
+        "description": "Get the latest top traders data from HyperDash",
+        "location": "top-traders.ts",
+        "module": "() => import('@/routes/hyperdash/top-traders.ts')"
+      }
+    },
+    "name": "HyperDash",
+    "url": "hyperdash.info",
+    "lang": "en"
+  },
   "hypergryph": {
     "routes": {
       "/arknights/announce/:platform?/:group?": {
@@ -64402,6 +64484,38 @@
         "location": "acct.ts",
         "module": "() => import('@/routes/mastodon/acct.ts')"
       },
+      "/tag/:site/:hashtag/:only_media?": {
+        "path": "/tag/:site/:hashtag/:only_media?",
+        "categories": [
+          "social-media"
+        ],
+        "view": 1,
+        "example": "/mastodon/tag/mastodon.social/gochisou/true",
+        "parameters": {
+          "site": "instance address, only domain, no `http://` or `https://` protocol header",
+          "hashtag": "Hashtag you want to subscribe to (without the # symbol)",
+          "only_media": {
+            "description": "whether only display media content, default to false, any value to true",
+            "options": [
+              {
+                "value": "true",
+                "label": "true"
+              },
+              {
+                "value": "false",
+                "label": "false"
+              }
+            ],
+            "default": "false"
+          }
+        },
+        "name": "Hashtag timeline",
+        "maintainers": [
+          "yuikisaito"
+        ],
+        "location": "tag.ts",
+        "module": "() => import('@/routes/mastodon/tag.ts')"
+      },
       "/timeline/:site/:only_media?": {
         "path": "/timeline/:site/:only_media?",
         "categories": [
@@ -64487,6 +64601,50 @@
     "apiRoutes": {},
     "url": "mastodon.social",
     "description": "::: tip\nOfficial user RSS:\n\n-   RSS: `https://**:instance**/users/**:username**.rss` ([Example](https://pawoo.net/users/pawoo_support.rss))\n-   Atom: ~~`https://**:instance**/users/**:username**.atom`~~ (Only for pawoo.net, [example](https://pawoo.net/users/pawoo_support.atom))\n\nThese feed do not include boosts (a.k.a. reblogs). RSSHub provides a feed for user timeline based on the Mastodon API, but to use that, you may need to create application on a Mastodon instance, and configure your RSSHub instance. Check the [Deploy Guide](https://docs.rsshub.app/deploy/config#route-specific-configurations) for route-specific configurations.\n:::",
+    "lang": "en"
+  },
+  "mathpix": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "mathpix.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/mathpix/blog",
+        "categories": [
+          "blog"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "mathpix.com/blog"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "module": "() => import('@/routes/mathpix/blog.ts')"
+      }
+    },
+    "name": "Mathpix",
+    "apiRoutes": {},
+    "url": "mathpix.com",
+    "categories": [
+      "blog"
+    ],
+    "description": "",
     "lang": "en"
   },
   "matters": {
@@ -68597,6 +68755,193 @@
     "apiRoutes": {},
     "url": "www.mixcloud.com",
     "lang": "en"
+  },
+  "mixi2": {
+    "routes": {
+      "/community/:id/:media?": {
+        "path": "/community/:id/:media?",
+        "name": "コミュニティ",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/mixi2/community/62e7e813-d242-4c54-a0ee-0aab5b2bbad2",
+        "parameters": {
+          "id": {
+            "description": "コミュニティID"
+          },
+          "media": {
+            "description": "`media`を入力するとメディアを含むポストのみを取得、デフォルトは空で全てのポストを取得"
+          }
+        },
+        "features": {
+          "supportRadar": true,
+          "requireConfig": [
+            {
+              "name": "MIXI2_AUTH_TOKEN",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでクッキーから `auth_token` の値を取得してください"
+            },
+            {
+              "name": "MIXI2_AUTH_KEY",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでリクエストヘッダーから `x-auth-key` の値を取得してください"
+            }
+          ]
+        },
+        "radar": [
+          {
+            "source": [
+              "mixi.social/communities/:id",
+              "mixi.social/communities/:id/about"
+            ],
+            "target": "/community/:id",
+            "title": "コミュニティ - ポスト"
+          },
+          {
+            "source": [
+              "mixi.social/communities/:id",
+              "mixi.social/communities/:id/about"
+            ],
+            "target": "/community/:id/media",
+            "title": "コミュニティ - メディア"
+          }
+        ],
+        "view": 1,
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "location": "community.ts",
+        "module": "() => import('@/routes/mixi2/community.ts')"
+      },
+      "/discovery": {
+        "path": "/discovery",
+        "name": "発見",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/mixi2/discovery",
+        "features": {
+          "supportRadar": true,
+          "requireConfig": [
+            {
+              "name": "MIXI2_AUTH_TOKEN",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでクッキーから `auth_token` の値を取得してください"
+            },
+            {
+              "name": "MIXI2_AUTH_KEY",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでリクエストヘッダーから `x-auth-key` の値を取得してください"
+            }
+          ]
+        },
+        "radar": [
+          {
+            "source": [
+              "mixi.social/home/discovery"
+            ],
+            "target": "/discovery",
+            "title": "発見"
+          }
+        ],
+        "view": 1,
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "location": "discovery.ts",
+        "module": "() => import('@/routes/mixi2/discovery.ts')"
+      },
+      "/home": {
+        "path": "/home",
+        "name": "フォロー中",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/mixi2/home",
+        "features": {
+          "requireConfig": [
+            {
+              "name": "MIXI2_AUTH_TOKEN",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでクッキーから `auth_token` の値を取得してください"
+            },
+            {
+              "name": "MIXI2_AUTH_KEY",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでリクエストヘッダーから `x-auth-key` の値を取得してください"
+            }
+          ],
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "mixi.social/home"
+            ],
+            "target": "/home",
+            "title": "フォロー中"
+          }
+        ],
+        "view": 1,
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "location": "home.ts",
+        "module": "() => import('@/routes/mixi2/home.ts')"
+      },
+      "/user/:name/:media?": {
+        "path": "/user/:name/:media?",
+        "name": "ユーザー",
+        "categories": [
+          "social-media"
+        ],
+        "example": "/mixi2/user/@deyo",
+        "parameters": {
+          "name": {
+            "description": "@で始まるユーザー名"
+          },
+          "media": {
+            "description": "`media`を入力するとメディアを含むポストのみを取得、デフォルトは空で全てのポストを取得"
+          }
+        },
+        "features": {
+          "requireConfig": [
+            {
+              "name": "MIXI2_AUTH_TOKEN",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでクッキーから `auth_token` の値を取得してください"
+            },
+            {
+              "name": "MIXI2_AUTH_KEY",
+              "description": "mixi2ログイン後の情報。ブラウザのコンソールでリクエストヘッダーから `x-auth-key` の値を取得してください"
+            }
+          ],
+          "supportRadar": true
+        },
+        "radar": [
+          {
+            "source": [
+              "mixi.social/:id"
+            ],
+            "target": "/user/:id",
+            "title": "ユーザー - ポスト"
+          },
+          {
+            "source": [
+              "mixi.social/:id"
+            ],
+            "target": "/user/:id/media",
+            "title": "ユーザー - メディア"
+          }
+        ],
+        "view": 1,
+        "maintainers": [
+          "KarasuShin"
+        ],
+        "location": "user.ts",
+        "module": "() => import('@/routes/mixi2/user.ts')"
+      }
+    },
+    "name": "mixi2",
+    "apiRoutes": {},
+    "url": "mixi.social",
+    "lang": "ja",
+    "categories": [
+      "social-media"
+    ]
   },
   "modb": {
     "routes": {
@@ -73128,6 +73473,32 @@
   },
   "njust": {
     "routes": {
+      "/cs/:type?": {
+        "path": "/cs/:type?",
+        "categories": [
+          "university"
+        ],
+        "example": "/njust/cs/xyxw",
+        "parameters": {
+          "type": "分类名，见下表，默认为学院新闻"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": true,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "name": "计算机学院",
+        "maintainers": [
+          "Horacecxk",
+          "jasongzy"
+        ],
+        "description": "| 学院新闻 | 通知公告 | 学术动态 |\n| -------- | -------- | -------- |\n| xyxw     | tzgg     | xsdt     |",
+        "location": "cs.ts",
+        "module": "() => import('@/routes/njust/cs.ts')"
+      },
       "/cwc/:type?": {
         "path": "/cwc/:type?",
         "categories": [
@@ -85923,6 +86294,63 @@
     "url": "research.samsung.com",
     "lang": "en"
   },
+  "sankei": {
+    "routes": {
+      "/news/:category": {
+        "path": "/news/:category",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/sankei/news/flash",
+        "parameters": {
+          "category": "Category name (as it will appear in URLs). For example, for \"Breaking News\" https://www.sankei.com/flash/, the category name would be \"flash\"."
+        },
+        "radar": [
+          {
+            "source": [
+              "www.sankei.com/:category"
+            ],
+            "target": "/news/:category"
+          }
+        ],
+        "name": "News",
+        "maintainers": [
+          "yuikisaito"
+        ],
+        "location": "news.ts",
+        "module": "() => import('@/routes/sankei/news.ts')"
+      },
+      "/topics/:topic": {
+        "path": [
+          "/topics/:topic"
+        ],
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/sankei/topics/etc_100",
+        "parameters": {
+          "topic": "Topic name (format included in URL). For example, for \"Expo 2025 Osaka, Kansai, Japan Special Feature\" https://www.sankei.com/tag/topic/etc_100, the value would be etc_100."
+        },
+        "radar": [
+          {
+            "source": [
+              "www.sankei.com/tag/topic/:topic"
+            ],
+            "target": "/topics/:topic"
+          }
+        ],
+        "name": "Topic",
+        "maintainers": [
+          "yuikisaito"
+        ],
+        "location": "topics.ts",
+        "module": "() => import('@/routes/sankei/topics.ts')"
+      }
+    },
+    "name": "Sankei Shimbun 産経新聞",
+    "url": "sankei.com",
+    "lang": "ja"
+  },
   "sara": {
     "routes": {
       "/:type": {
@@ -90122,6 +90550,31 @@
         "description": "| 新闻中心 | 通知通告 | 教学运行  | 注册学务 | 研究办 | 教改办 | 综合办 | 语言文字 | 工会与支部 | 通识教育 | 面向学生的通知 |\n| -------- | -------- | --------- | -------- | ------ | ------ | ------ | -------- | ---------- | -------- |\n| news     | notice   | operation | affairs  | yjb    | jgb    | zhb    | language | party      | ge       | students  |",
         "location": "jwc.ts",
         "module": "() => import('@/routes/sjtu/jwc.ts')"
+      },
+      "/seiee/icisee/:cat": {
+        "path": "/seiee/icisee/:cat",
+        "categories": [
+          "university"
+        ],
+        "example": "/sjtu/seiee/icisee/news",
+        "parameters": {
+          "cat": "子类别"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [],
+        "name": "集成电路学院（信息与电子工程学院）",
+        "maintainers": [
+          "dzx-dzx"
+        ],
+        "location": "seiee/icisee.ts",
+        "module": "() => import('@/routes/sjtu/seiee/icisee.ts')"
       },
       "/seiee/:path/:catID?/:searchCatCode?": {
         "path": "/seiee/:path/:catID?/:searchCatCode?",
@@ -103262,6 +103715,37 @@
     "url": "tvb.com",
     "lang": "zh-HK"
   },
+  "tver": {
+    "routes": {
+      "/series/:id": {
+        "path": "/series/:id",
+        "categories": [
+          "traditional-media"
+        ],
+        "example": "/tver/series/srx2o7o3c8",
+        "parameters": {
+          "id": "Series ID (as it appears in URLs). For example, in https://tver.jp/series/srx2o7o3c8, the ID is \"srx2o7o3c8\"."
+        },
+        "radar": [
+          {
+            "source": [
+              "tver.jp/series/:id"
+            ],
+            "target": "/series/:id"
+          }
+        ],
+        "name": "Series",
+        "maintainers": [
+          "yuikisaito"
+        ],
+        "location": "series.ts",
+        "module": "() => import('@/routes/tver/series.ts')"
+      }
+    },
+    "name": "TVer",
+    "url": "tver.jp",
+    "lang": "ja"
+  },
   "tvtropes": {
     "routes": {
       "/featured/:category?": {
@@ -109304,6 +109788,82 @@
     "apiRoutes": {},
     "url": "zh.wikinews.org",
     "lang": "zh-CN"
+  },
+  "windsurf": {
+    "routes": {
+      "/blog": {
+        "path": "/blog",
+        "name": "Blog",
+        "url": "windsurf.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/windsurf/blog",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "windsurf.com/blog"
+            ],
+            "target": "/blog"
+          }
+        ],
+        "view": 0,
+        "location": "blog.ts",
+        "module": "() => import('@/routes/windsurf/blog.ts')"
+      },
+      "/changelog": {
+        "path": "/changelog",
+        "name": "Changelog",
+        "url": "windsurf.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/windsurf/changelog",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "windsurf.com/changelog"
+            ],
+            "target": "/changelog"
+          }
+        ],
+        "view": 0,
+        "location": "changelog.ts",
+        "module": "() => import('@/routes/windsurf/changelog.ts')"
+      }
+    },
+    "name": "Windsurf",
+    "apiRoutes": {},
+    "url": "windsurf.com",
+    "categories": [
+      "programming"
+    ],
+    "description": "",
+    "lang": "en"
   },
   "winstall": {
     "routes": {

@@ -661,6 +661,9 @@
   "/atptour/news/:lang?": [
     "LM1207"
   ],
+  "/augmentcode/blog": [
+    "nczitzk"
+  ],
   "/auto-stats/:category?": [
     "nczitzk"
   ],
@@ -1118,7 +1121,8 @@
     "FerrisChi"
   ],
   "/bsky/keyword/:keyword": [
-    "untitaker"
+    "untitaker",
+    "DIYgod"
   ],
   "/bsky/profile/:handle/:routeParams?": [
     "TonyRL"
@@ -3886,6 +3890,9 @@
     "HenryQW",
     "nczitzk"
   ],
+  "/hyperdash/top-traders": [
+    "pseudoyu"
+  ],
   "/hypergryph/arknights/announce/:platform?/:group?": [
     "swwind"
   ],
@@ -4871,11 +4878,17 @@
   "/mastodon/acct/:acct/statuses/:only_media?": [
     "notofoe"
   ],
+  "/mastodon/tag/:site/:hashtag/:only_media?": [
+    "yuikisaito"
+  ],
   "/mastodon/timeline/:site/:only_media?": [
     "hoilc"
   ],
   "/mastodon/remote/:site/:only_media?": [
     "hoilc"
+  ],
+  "/mathpix/blog": [
+    "nczitzk"
   ],
   "/matters/author/:uid": [
     "Cerebrater",
@@ -5051,6 +5064,18 @@
   ],
   "/mixcloud/:username/:type?": [
     "Misaka13514"
+  ],
+  "/mixi2/community/:id/:media?": [
+    "KarasuShin"
+  ],
+  "/mixi2/discovery": [
+    "KarasuShin"
+  ],
+  "/mixi2/home": [
+    "KarasuShin"
+  ],
+  "/mixi2/user/:name/:media?": [
+    "KarasuShin"
   ],
   "/modb/topic/:id": [
     "yueneiqi"
@@ -5415,6 +5440,10 @@
   ],
   "/njupt/jwc/:type?": [
     "shaoye"
+  ],
+  "/njust/cs/:type?": [
+    "Horacecxk",
+    "jasongzy"
   ],
   "/njust/cwc/:type?": [
     "MilkShakeYoung",
@@ -6482,6 +6511,12 @@
   "/samsung/research/blog": [
     "nczitzk"
   ],
+  "/sankei/news/:category": [
+    "yuikisaito"
+  ],
+  "/sankei/topics/:topic": [
+    "yuikisaito"
+  ],
   "/sara/:type": [
     "HChenZi"
   ],
@@ -6862,6 +6897,9 @@
   ],
   "/sjtu/jwc/:type?": [
     "SeanChao"
+  ],
+  "/sjtu/seiee/icisee/:cat": [
+    "dzx-dzx"
   ],
   "/sjtu/seiee/:path/:catID?/:searchCatCode?": [
     "dzx-dzx"
@@ -7670,6 +7708,9 @@
   "/tvb/news/:category?/:language?": [
     "nczitzk"
   ],
+  "/tver/series/:id": [
+    "yuikisaito"
+  ],
   "/tvtropes/featured/:category?": [
     "nczitzk"
   ],
@@ -8187,6 +8228,12 @@
   ],
   "/wikinews/latest": [
     "KotoriK"
+  ],
+  "/windsurf/blog": [
+    "nczitzk"
+  ],
+  "/windsurf/changelog": [
+    "nczitzk"
   ],
   "/winstall/:appId": [
     "TonyRL"

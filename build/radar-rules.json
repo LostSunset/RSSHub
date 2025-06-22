@@ -5812,6 +5812,19 @@
       }
     ]
   },
+  "augmentcode.com": {
+    "_name": "Augment Code",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog"
+        ],
+        "target": "/augmentcode/blog"
+      }
+    ]
+  },
   "baai.ac.cn": {
     "_name": "北京智源人工智能研究院",
     "hub": [
@@ -19907,6 +19920,19 @@
       }
     ]
   },
+  "hyperdash.info": {
+    "_name": "HyperDash",
+    ".": [
+      {
+        "title": "Top Traders",
+        "docs": "https://docs.rsshub.app/routes/finance",
+        "source": [
+          "/"
+        ],
+        "target": "/hyperdash/top-traders"
+      }
+    ]
+  },
   "arktca.com": {
     "_name": "鹰角网络",
     "aneot": [
@@ -23111,6 +23137,19 @@
       }
     ]
   },
+  "mathpix.com": {
+    "_name": "Mathpix",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/blog",
+        "source": [
+          "/blog"
+        ],
+        "target": "/mathpix/blog"
+      }
+    ]
+  },
   "matters.town": {
     "_name": "Matters",
     ".": [
@@ -25955,6 +25994,61 @@
           "/:username/:type"
         ],
         "target": "/mixcloud/:username/:type?"
+      }
+    ]
+  },
+  "mixi.social": {
+    "_name": "mixi2",
+    ".": [
+      {
+        "title": "コミュニティ - ポスト",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/communities/:id",
+          "/communities/:id/about"
+        ],
+        "target": "/mixi2/community/:id"
+      },
+      {
+        "title": "コミュニティ - メディア",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/communities/:id",
+          "/communities/:id/about"
+        ],
+        "target": "/mixi2/community/:id/media"
+      },
+      {
+        "title": "発見",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/home/discovery"
+        ],
+        "target": "/mixi2/discovery"
+      },
+      {
+        "title": "フォロー中",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/home"
+        ],
+        "target": "/mixi2/home"
+      },
+      {
+        "title": "ユーザー - ポスト",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:id"
+        ],
+        "target": "/mixi2/user/:id"
+      },
+      {
+        "title": "ユーザー - メディア",
+        "docs": "https://docs.rsshub.app/routes/social-media",
+        "source": [
+          "/:id"
+        ],
+        "target": "/mixi2/user/:id/media"
       }
     ]
   },
@@ -31607,6 +31701,27 @@
       }
     ]
   },
+  "sankei.com": {
+    "_name": "Sankei Shimbun 産経新聞",
+    "www": [
+      {
+        "title": "News",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/:category"
+        ],
+        "target": "/sankei/news/:category"
+      },
+      {
+        "title": "Topic",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/tag/topic/:topic"
+        ],
+        "target": "/sankei/topics/:topic"
+      }
+    ]
+  },
   "sass.org.cn": {
     "_name": "上海社会科学院",
     "gs": [
@@ -36887,6 +37002,19 @@
       }
     ]
   },
+  "tver.jp": {
+    "_name": "TVer",
+    ".": [
+      {
+        "title": "Series",
+        "docs": "https://docs.rsshub.app/routes/traditional-media",
+        "source": [
+          "/series/:id"
+        ],
+        "target": "/tver/series/:id"
+      }
+    ]
+  },
   "twitch.tv": {
     "_name": "Twitch",
     "www": [
@@ -38345,6 +38473,27 @@
           "/wiki/Special:%E6%96%B0%E9%97%BB%E8%AE%A2%E9%98%85"
         ],
         "target": "/wikinews/latest"
+      }
+    ]
+  },
+  "windsurf.com": {
+    "_name": "Windsurf",
+    ".": [
+      {
+        "title": "Blog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/blog"
+        ],
+        "target": "/windsurf/blog"
+      },
+      {
+        "title": "Changelog",
+        "docs": "https://docs.rsshub.app/routes/programming",
+        "source": [
+          "/changelog"
+        ],
+        "target": "/windsurf/changelog"
       }
     ]
   },
