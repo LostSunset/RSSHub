@@ -528,6 +528,9 @@
   "/anthropic/news": [
     "etShaw-zh"
   ],
+  "/anthropic/research": [
+    "ttttmr"
+  ],
   "/anytxt/release-notes": [
     "nczitzk"
   ],
@@ -1512,6 +1515,9 @@
   "/chnmuseum/zx/xwzt": [
     "ShabbyWhineYear"
   ],
+  "/chocolatey/packages/:id": [
+    "nczitzk"
+  ],
   "/chongbuluo/newthread": [
     "qiye45"
   ],
@@ -1671,6 +1677,9 @@
   "/cntv/:column": [
     "WhoIsSure",
     "Fatpandac"
+  ],
+  "/cockroachlabs/blog/:category?": [
+    "CookiePieWw"
   ],
   "/codeforces/contests": [
     "Fatpandac"
@@ -1993,6 +2002,9 @@
   ],
   "/deepin/threads/:type?": [
     "myml"
+  ],
+  "/deepl/blog/:lang?": [
+    "nczitzk"
   ],
   "/deeplearning/the-batch/:tag{.+}?": [
     "nczitzk",
@@ -4840,6 +4852,15 @@
     "EthanWng97"
   ],
   "/mail/imap/:email/:folder{.+}?": [],
+  "/makerworld/contests": [
+    "TonyRL"
+  ],
+  "/makerworld/trending": [
+    "TonyRL"
+  ],
+  "/makerworld/user/:handle/upload": [
+    "TonyRL"
+  ],
   "/malaysiakini/:lang/:category?": [
     "quiniapiezoelectricity"
   ],
@@ -6508,6 +6529,9 @@
   "/samd/news/:typeId": [
     "hualiong"
   ],
+  "/samrdprc/news/:type1/:type2": [
+    "a180285"
+  ],
   "/samsung/research/blog": [
     "nczitzk"
   ],
@@ -6591,6 +6615,9 @@
   ],
   "/scnu/cs/match": [
     "fengkx"
+  ],
+  "/scoop/apps/:query?": [
+    "nczitzk"
   ],
   "/sctv/programme/:id?/:limit?/:isFull?": [
     "nczitzk"
