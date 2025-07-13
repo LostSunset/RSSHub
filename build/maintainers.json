@@ -1823,6 +1823,15 @@
   "/csdn/blog/:user": [
     "Jkker"
   ],
+  "/css-tricks/articles": [
+    "Rjnishant530"
+  ],
+  "/css-tricks/collections/:type": [
+    "Rjnishant530"
+  ],
+  "/css-tricks/popular": [
+    "Rjnishant530"
+  ],
   "/cssn/iolaw/:section?": [
     "HankChow"
   ],
@@ -2966,6 +2975,9 @@
   ],
   "/github/notifications": [
     "zhzy0077"
+  ],
+  "/github/feed/:user/:types?": [
+    "RtYkk"
   ],
   "/github/pull/:user/:repo/:state?/:labels?": [
     "hashman",
@@ -5159,6 +5171,9 @@
   "/musify/:language?": [
     "nczitzk"
   ],
+  "/musikguru/news": [
+    "nczitzk"
+  ],
   "/mwm/:category?": [
     "nczitzk"
   ],
@@ -5195,6 +5210,9 @@
   ],
   "/mysql/release/:version?": [
     "nczitzk"
+  ],
+  "/nankai/yzb/:type?": [
+    "sddzhyc"
   ],
   "/nasa/apod-cn": [
     "nczitzk",
@@ -8054,6 +8072,12 @@
   "/vimeo/user/:username/:cat?": [
     "MisteryMonster"
   ],
+  "/visionias/dailySummary": [
+    "Rjnishant530"
+  ],
+  "/visionias/monthlyMagazine": [
+    "Rjnishant530"
+  ],
   "/visionias/newsToday/:filter?": [
     "Rjnishant530"
   ],
@@ -8141,6 +8165,9 @@
     "ViggoC"
   ],
   "/wdc/download/:id?": [],
+  "/wdfxw/bookfree/:id?": [
+    "nczitzk"
+  ],
   "/web/articles": [
     "KarasuShin"
   ],
